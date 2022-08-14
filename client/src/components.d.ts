@@ -9,6 +9,8 @@ declare module '@vue/runtime-core' {
     BaseSide: typeof import('./components/layouts/BaseSide.vue')['default']
     ElConfigProvider: typeof import('element-plus/es')['ElConfigProvider']
     HelloWorld: typeof import('./components/HelloWorld.vue')['default']
+    Login: typeof import('./components/login/login.vue')['default']
+    Register: typeof import('./components/login/register.vue')['default']
   }
 }
 
