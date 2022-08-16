@@ -26,6 +26,7 @@ app.get('/', function (req, res) {
     res.sendFile(path + "index.html");
 });
 
+app.use(require('./controllers/'));
 
 // set port, listen for requests
 const PORT = process.env.PORT || 8080;
