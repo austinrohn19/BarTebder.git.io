@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS bar_tender;
+
+CREATE DATABASE bar_tender;
