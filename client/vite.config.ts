@@ -4,6 +4,7 @@ import vue from '@vitejs/plugin-vue'
 
 import Components from 'unplugin-vue-components/vite'
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
+import { fileURLToPath } from 'url'
 
 import Unocss from 'unocss/vite'
 import {
@@ -21,6 +22,7 @@ export default defineConfig({
   resolve: {
     alias: {
       '~/': `${pathSrc}/`,
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
     },
   },
   css: {

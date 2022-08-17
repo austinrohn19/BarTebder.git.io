@@ -9,7 +9,7 @@
 
       <div class="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
         <div class="px-4 py-8 sm:px-10">
-          <form class="space-y-6" action="#" method="POST">
+          <form class="space-y-6" @submit="handleRegister">
             <div>
               <div class="mt-1">
                 <input
@@ -145,8 +145,135 @@
           >
             Register
           </a>
+          <Form @submit="handleRegister">
+            <div v-if="!successful">
+              <div class="form-group mt-1">
+                <input
+                  name="username"
+                  type="text"
+                  placeholder="username"
+                  class="
+                    input input-bordered
+                    w-full
+                    max-w-xs
+                    w-full
+                    text-base text-neutral-600
+                    transition
+                    duration-500
+                    ease-in-out
+                    transform
+                    border border-transparent
+                    rounded-lg
+                    bg-gray-50
+                  "
+                />
+              </div>
+              <div class="form-group mt-1">
+                <input
+                  name="email"
+                  type="email"
+                  placeholder="email"
+                  class="
+                    input input-bordered
+                    w-full
+                    max-w-xs
+                    w-full
+                    text-base text-neutral-600
+                    transition
+                    duration-500
+                    ease-in-out
+                    transform
+                    border border-transparent
+                    rounded-lg
+                    bg-gray-50
+                  "
+                />
+              </div>
+              <div class="form-group mt-1">
+                <input
+                  name="password"
+                  type="password"
+                  placeholder="password"
+                  class="
+                    input input-bordered
+                    w-full
+                    max-w-xs
+                    w-full
+                    text-base text-neutral-600
+                    transition
+                    duration-500
+                    ease-in-out
+                    transform
+                    border border-transparent
+                    rounded-lg
+                    bg-gray-50
+                  "
+                />
+              </div>
+              <div class="form-group mt-1">
+                <button class="btn btn-primary btn-block" :disabled="loading">
+                  Sign Up
+                </button>
+              </div>
+            </div>
+          </Form>
         </div>
       </div>
     </div>
   </section>
 </template>
+
+<script>
+import { Form, Field, ErrorMessage } from 'vee-validate';
+export default {
+  name: 'login',
+  components: {
+    Form,
+    Field,
+    ErrorMessage,
+  },
+  data() {
+    return {
+      successful: false,
+      loading: false,
+      message: '',
+    };
+  },
+  computed: {
+    loggedIn() {
+      return this.$store.state.auth.status.loggedIn;
+    },
+  },
+  mounted() {
+    if (this.loggedIn) {
+      console.log('I AM LOGGED IN');
+      //this.$router.push("/profile");
+    }
+  },
+  methods: {
+    handleRegister(user) {
+      console.log('abc');
+      this.message = '';
+      this.successful = false;
+      this.loading = true;
+      this.$store.dispatch('auth/register', user).then(
+        (data) => {
+          this.message = data.message;
+          this.successful = true;
+          this.loading = false;
+        },
+        (error) => {
+          this.message =
+            (error.response &&
+              error.response.data &&
+              error.response.data.message) ||
+            error.message ||
+            error.toString();
+          this.successful = false;
+          this.loading = false;
+        }
+      );
+    },
+  },
+};
+</script>
