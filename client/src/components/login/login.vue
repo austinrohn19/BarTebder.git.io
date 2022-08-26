@@ -148,7 +148,7 @@
           <Form @submit="handleRegister">
             <div v-if="!successful">
               <div class="form-group mt-1">
-                <input
+                <Field
                   name="username"
                   type="text"
                   placeholder="username"
@@ -169,7 +169,7 @@
                 />
               </div>
               <div class="form-group mt-1">
-                <input
+                <Field
                   name="email"
                   type="email"
                   placeholder="email"
@@ -190,7 +190,7 @@
                 />
               </div>
               <div class="form-group mt-1">
-                <input
+                <Field
                   name="password"
                   type="password"
                   placeholder="password"
@@ -252,6 +252,7 @@ export default {
   },
   methods: {
     handleRegister(user) {
+      console.log(user);
       console.log('abc');
       this.message = '';
       this.successful = false;
