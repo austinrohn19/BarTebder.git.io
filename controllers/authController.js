@@ -1,34 +1,35 @@
-const User = require('../models/user');
+const User = require('../models/User');
 
 const ErrorHandler = require('../utils/errorHandler')
 const catchAsyncErrors = require('../middlewares/catchAsyncErrors');
 const sendToken = require('../utils/jwtToken');
-const sendEmail = require('../utils/sendEmail');
+// const sendEmail = require('../utils/sendEmail');
 
 const crypto = require('crypto');
 const { send } = require('process');
 const { restart } = require('nodemon');
-const cloudinary = require('cloudinary');
+// const cloudinary = require('cloudinary');
 
 //register a user => /api/v1/register
 exports.registerUser = catchAsyncErrors(async (req, res, next) => {
 
-    const result = await cloudinary.v2.uploader.upload(req.body.avatar, {
-        folder: 'avatars',
-        width: 150,
-        crop: "scale"
-    })
+    // const result = await cloudinary.v2.uploader.upload(req.body.avatar, {
+    //     folder: 'avatars',
+    //     width: 150,
+    //     crop: "scale"
+    // })
 
-    const { name, email, password } = req.body;
+    const { username, email, password } = req.body;
 
+    console.log(req.body);
     const user = await User.create({
-        name,
+        username,
         email,
         password,
-        avatar: {
-            public_id: result.public_id,
-            url: result.secure_url,
-        }
+        // avatar: {
+        //     public_id: result.public_id,
+        //     url: result.secure_url,
+        // }
     })
 
     sendToken(user, 200, res)
@@ -43,7 +44,7 @@ exports.loginUser = catchAsyncErrors(async (req, res, next) => {
         return next(new ErrorHandler('Please enter email and password.', 400))
     }
 
-   
+
     //finding user in Database
     // we must use the .select method here because in the user model we have password set to select= false
     const user = await User.findOne({ email }).select('+password');
@@ -87,11 +88,11 @@ exports.forgotPassword = catchAsyncErrors(async (req, res, next) => {
 
     try {
         //this is to send the email
-        await sendEmail({
-            email: user.email,
-            subject: 'Extreme Custom Karts Password Recovery',
-            message
-        })
+        // await sendEmail({
+        //     email: user.email,
+        //     subject: 'Extreme Custom Karts Password Recovery',
+        //     message
+        // })
 
         res.status(200).json({
             success: true,
@@ -181,18 +182,18 @@ exports.updateProfile = catchAsyncErrors(async (req, res, next) => {
         const user = await User.findById(req.user.id)
 
         const image_id = user.avatar.public_id;
-        const res = await cloudinary.v2.uploader.destroy(image_id);
+        // const res = await cloudinary.v2.uploader.destroy(image_id);
 
-        const result = await cloudinary.v2.uploader.upload(req.body.avatar, {
-            folder: 'avatars',
-            width: 150,
-            crop: "scale"
-        })
+        // const result = await cloudinary.v2.uploader.upload(req.body.avatar, {
+        //     folder: 'avatars',
+        //     width: 150,
+        //     crop: "scale"
+        // })
 
-        newUserData.avatar = {
-            public_id: result.public_id,
-            url: result.secure_url
-        }
+        // newUserData.avatar = {
+        //     public_id: result.public_id,
+        //     url: result.secure_url
+        // }
     }
 
     //updating the info of the user
