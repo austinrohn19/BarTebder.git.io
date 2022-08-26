@@ -1,54 +1,44 @@
-const { Model, DataTypes } = require('sequelize');
-const bcrypt = require('bcrypt');
-const sequelize = require('../config/config');
+const mongoose = require('mongoose');
+const validator= require('validator');
+const bcrypt = require('bcryptjs');
+const jwt = require('jsonwebtoken');
+//this is a built in package so it does not have to be installed in the package.json
+const crypto = require('crypto');
 
-// create our User model
-class User extends Model {
-    // set up method to run on instance data (per user) to check password
-    checkPassword(loginPw) {
-        return bcrypt.compareSync(loginPw, this.password);
-    }
-}
-
-User.init(
-    {
-        id: {
-            type: DataTypes.INTEGER,
-            allowNull: false,
-            primaryKey: true,
-            autoIncrement: true
+const userSchema = new mongoose.Schema({
+    //user name is being created
+    name: {
+        type: String ,
+        required: [true, 'Please enter your name.'],
+        maxlength: [30, 'your name cant exceed 30 characters']
+    },
+    //email of the user for validation and setting up of the account
+    email: {
+        type: String, 
+        required: [true, 'Please enter your email address'],
+        unique: true,
+        validate: [validator.isEmail, 'Please enter a valid email address.']
+    }, 
+    //password the user sets
+    password: {
+        type: String ,
+        required: [true, 'Please enter your password'],
+        minlength: [8, 'your password must be at least 8 characters.'],
+        select: false
+    },
+    //this is the id and url of the image because we are using cloudary to store our photos in
+    avatar: {
+        public_id: {
+            type: String ,
+            requires: true
         },
-        username: {
-            type: DataTypes.STRING,
-            allowNull: false
-        },
-        password: {
-            type: DataTypes.STRING,
-            allowNull: false,
-            validate: {
-                len: [4]
-            }
+        url: {
+            type: String,
+            required: true
         }
     },
-    {
-        hooks: {
-            // set up beforeCreate lifecycle "hook" functionality
-            async beforeCreate(newUserData) {
-                newUserData.password = await bcrypt.hash(newUserData.password, 10);
-                return newUserData;
-            },
-
-            async beforeUpdate(updatedUserData) {
-                updatedUserData.password = await bcrypt.hash(updatedUserData.password, 10);
-                return updatedUserData;
-            }
-        },
-        sequelize,
-        timestamps: false,
-        freezeTableName: true,
-        underscored: true,
-        modelName: 'User'
-    }
-);
-
-module.exports = User;
+    //default setting that is being created
+    role: {
+        type: String ,
+        default: 'user'
+    },
