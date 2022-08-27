@@ -39,6 +39,7 @@ exports.registerUser = catchAsyncErrors(async (req, res, next) => {
 exports.loginUser = catchAsyncErrors(async (req, res, next) => {
     const { email, password } = req.body;
 
+    console.log(req.body);
     //checks if email and password is entered by user
     if (!email || !password) {
         return next(new ErrorHandler('Please enter email and password.', 400))
@@ -47,8 +48,11 @@ exports.loginUser = catchAsyncErrors(async (req, res, next) => {
 
     //finding user in Database
     // we must use the .select method here because in the user model we have password set to select= false
-    const user = await User.findOne({ email }).select('+password');
-
+    const user = await User.findOne({
+        where: {
+            email: email
+        }
+    })
 
 
     if (!user) {
@@ -56,7 +60,7 @@ exports.loginUser = catchAsyncErrors(async (req, res, next) => {
     }
 
     //check if password is correct or not.
-    const isPasswordMatch = await user.comparePassword(password);
+    const isPasswordMatch = await user.checkPassword(password);
 
     if (!isPasswordMatch) {
         return next(new ErrorHandler('invalid Password, Please try again.', 401));

@@ -6,10 +6,10 @@ const sendToken = (user, statusCode, res) => {
 
     //Options for the Cookie
     const options = {
-        expires: new Date(
+        expiresIn: new Date(
             // this is referencing the time *= multiply, 24=hours, 60,minutes, 60=seconds, 1000=miliseconds
             Date.now() + process.env.COOKIE_EXPIRES_TIME * 24 * 60 * 60 * 1000
-            ),
+        ),
         //this is important to make this httpOnly because if not the cookie can be accessed with javascript code and is not longer secure.
         httpOnly: true
     }

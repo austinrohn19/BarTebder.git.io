@@ -9,10 +9,30 @@
 
       <div class="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
         <div class="px-4 py-8 sm:px-10">
-          <form class="space-y-6" @submit="handleRegister">
+          <Form class="space-y-6" @submit="handleLogin">
             <div>
               <div class="mt-1">
-                <input
+                <Field
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  placeholder="email"
+                  class="
+                    input input-bordered
+                    w-full
+                    max-w-xs
+                    w-full
+                    text-base text-neutral-600
+                    transition
+                    duration-500
+                    ease-in-out
+                    transform
+                    border border-transparent
+                    rounded-lg
+                    bg-gray-50
+                  "
+                />
+                <Field
                   placeholder="Email Address"
                   id="email"
                   name="email"
@@ -39,7 +59,7 @@
 
             <div>
               <div class="mt-1">
-                <input
+                <Field
                   placeholder="Password"
                   id="password"
                   name="password"
@@ -66,7 +86,7 @@
 
             <div class="flex items-center justify-between">
               <div class="flex items-center">
-                <input
+                <Field
                   id="remember-me"
                   name="remember-me"
                   type="checkbox"
@@ -118,7 +138,7 @@
                 Sign in
               </button>
             </div>
-          </form>
+          </Form>
         </div>
       </div>
 
@@ -145,6 +165,23 @@
           >
             Register
           </a>
+          <h1
+            class="
+              flex
+              items-center
+              justify-center
+              w-full
+              text-base
+              font-medium
+              text-center text-white
+              transition
+              ease-in-out
+              transform
+              rounded-xl
+            "
+          >
+            {{ loggedIn }}
+          </h1>
           <Form @submit="handleRegister">
             <div v-if="!successful">
               <div class="form-group mt-1">
@@ -212,7 +249,7 @@
               </div>
               <div class="form-group mt-1">
                 <button class="btn btn-primary btn-block" :disabled="loading">
-                  Sign Up
+                  Sign Up TEST
                 </button>
               </div>
             </div>
@@ -251,9 +288,26 @@ export default {
     }
   },
   methods: {
-    handleRegister(user) {
+    handleLogin(user) {
+      this.loading = true;
+      console.log('???');
       console.log(user);
-      console.log('abc');
+      this.$store.dispatch('auth/login', user).then(
+        () => {
+          this.$router.push('/profile');
+        },
+        (error) => {
+          this.loading = false;
+          this.message =
+            (error.response &&
+              error.response.data &&
+              error.response.data.message) ||
+            error.message ||
+            error.toString();
+        }
+      );
+    },
+    handleRegister(user) {
       this.message = '';
       this.successful = false;
       this.loading = true;

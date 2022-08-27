@@ -1,7 +1,12 @@
 const express = require("express");
 const session = require("express-session");
+const cors = require("cors");
 const path = __dirname + '/client/dist/';
 const app = express();
+var corsOptions = {
+    origin: "http://localhost:3000"
+};
+app.use(cors(corsOptions));
 app.use(express.static(path));
 
 app.use(express.json());

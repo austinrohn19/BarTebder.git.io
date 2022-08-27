@@ -26,10 +26,12 @@ export const auth = {
         register({ commit }, user) {
             return AuthService.register(user).then(
                 response => {
+                    console.log("response")
                     commit('registerSuccess');
                     return Promise.resolve(response.data);
                 },
                 error => {
+                    console.log("error")
                     commit('registerFailure');
                     return Promise.reject(error);
                 }
@@ -38,21 +40,26 @@ export const auth = {
     },
     mutations: {
         loginSuccess(state, user) {
+            console.log("loggined in?")
             state.status.loggedIn = true;
             state.user = user;
         },
         loginFailure(state) {
+            console.log("loginFailure");
             state.status.loggedIn = false;
             state.user = null;
         },
         logout(state) {
+            console.log("logout");
             state.status.loggedIn = false;
             state.user = null;
         },
         registerSuccess(state) {
+            console.log("registerSuccess");
             state.status.loggedIn = false;
         },
         registerFailure(state) {
+            console.log("registerFailure");
             state.status.loggedIn = false;
         }
     }
