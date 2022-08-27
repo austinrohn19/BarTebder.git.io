@@ -2,11 +2,37 @@
   <nav>
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link> |
-    <router-link to="/register">Register</router-link>
+    <router-link to="/register">Register</router-link>|
+    <router-link v-if="loggedIn || true" to="/dashboard">Dashboard</router-link>
   </nav>
   <router-view />
 </template>
 
+<script>
+import { Form, Field, ErrorMessage } from 'vee-validate';
+export default {
+  name: 'login',
+  components: {
+    Form,
+    Field,
+    ErrorMessage,
+  },
+  data() {
+    return {
+      successful: false,
+      loading: false,
+      message: '',
+    };
+  },
+  computed: {
+    loggedIn() {
+      return this.$store.state.auth.status.loggedIn;
+    },
+  },
+  mounted() {},
+  methods: {},
+};
+</script>
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
