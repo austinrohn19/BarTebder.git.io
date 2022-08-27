@@ -8,6 +8,10 @@ export default createRouter({
             component: () => import('@/components/login/login.vue'),
         },
         {
+            path: '/register',
+            component: () => import('@/components/login/register.vue'),
+        },
+        {
             path: '/about',
             component: () => import('@/views/HomeView.vue'),
         },
