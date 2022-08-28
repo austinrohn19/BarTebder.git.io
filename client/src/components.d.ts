@@ -5,13 +5,20 @@ import '@vue/runtime-core'
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    Bar: typeof import('./components/bar/index.vue')['default']
     BaseHeader: typeof import('./components/layouts/BaseHeader.vue')['default']
     BaseSide: typeof import('./components/layouts/BaseSide.vue')['default']
+    Cabniet: typeof import('./components/cabniet/index.vue')['default']
+    Dashboard: typeof import('./components/dashboard.vue')['default']
     HelloWorld: typeof import('./components/HelloWorld.vue')['default']
     Login: typeof import('./components/login/login.vue')['default']
+    Recipes: typeof import('./components/recipes/index.vue')['default']
     Register: typeof import('./components/login/register.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    Scales: typeof import('./components/scales/index.vue')['default']
+    Servers: typeof import('./components/servers/index.vue')['default']
+    Summary: typeof import('./components/summary/index.vue')['default']
   }
 }
 

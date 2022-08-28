@@ -10,12 +10,32 @@ const routes = [
         component: () => import('@/components/login/register.vue'),
     },
     {
-        path: '/about',
-        component: () => import('@/views/HomeView.vue'),
+        path: '/dashboard',
+        component: () => import('@/components/dashboard.vue'),
     },
     {
-        path: '/contact',
-        component: () => import('@/views/HomeView.vue'),
+        path: '/bar',
+        component: () => import('@/components/bar/index.vue'),
+    },
+    {
+        path: '/cabniet',
+        component: () => import('@/components/cabniet/index.vue'),
+    },
+    {
+        path: '/recipes',
+        component: () => import('@/components/recipes/index.vue'),
+    },
+    {
+        path: '/scales',
+        component: () => import('@/components/scales/index.vue'),
+    },
+    {
+        path: '/servers',
+        component: () => import('@/components/servers/index.vue'),
+    },
+    {
+        path: '/summary',
+        component: () => import('@/components/summary/index.vue'),
     },
 ]
 
