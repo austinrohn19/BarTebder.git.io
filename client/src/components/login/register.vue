@@ -1,714 +1,227 @@
 <template>
   <section>
-    <div class="flex flex-col justify-conter min- py-12 sm:px-6 lg:px-8">
+    <div class="flex flex-col justify-center min- py-12 sm:px-6 lg:px-8">
       <div class="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
         <div class="px-4 py-8 sm:px-10">
           <a
             type="submit"
-            class="
-              btn
-              flex
-              items-center
-              justify-center
-              w-full
-              text-base
-              font-medium
-              text-center text-white
-              transition
-              ease-in-out
-              transform
-              rounded-xl
-            "
+            class="btn flex items-center justify-center w-full text-base font-medium text-center text-white transition ease-in-out transform rounded-xl"
             href="register"
           >
-            Register
+            Bar-Tender Registration
           </a>
           <h1
-            class="
-              flex
-              items-center
-              justify-center
-              w-full
-              text-base
-              font-medium
-              text-center text-white
-              transition
-              ease-in-out
-              transform
-              rounded-xl
-            "
+            class="flex items-center justify-center w-full text-base font-medium text-center text-white transition ease-in-out transform rounded-xl"
           ></h1>
           <Form @submit="handleRegister">
             <div v-if="!successful">
-<<<<<<< HEAD
-              <div class="username-container mt-3 mb-5">
-              <div class="flex flex-col justify-center drop-shadow-lg border-solid border-2 border-black-200 rounded-lg py-8 sm:px-8 lg:px-8" style="background-color:#dbdbdb">
-                <div class="form-group mt-1">
-                <Field name="username" type="text" placeholder="Username" class="
-=======
-              <div class="form-group mt-1">
-                <Field
-                  name="username"
-                  type="text"
-                  placeholder="Username"
-                  class="
->>>>>>> fa37104855ad9f31ba08eeeef80669074d045b3e
-                    input input-bordered
-                    w-full
-                    max-w-xs
-                    w-full
-                    text-base text-neutral-600
-                    transition
-                    duration-500
-                    ease-in-out
-                    transform
-                    border border-transparent
-                    rounded-lg
-                    bg-gray-50
-                  "
-                />
-              </div>
-<<<<<<< HEAD
-=======
-            </div>
->>>>>>> fa37104855ad9f31ba08eeeef80669074d045b3e
-            <div class="form-group mt-1">
-              <Field
-                name="password"
-                type="password"
-                placeholder="Password"
-                class="
-                  input input-bordered
-                  w-full
-                  max-w-xs
-                  w-full
-                  text-base text-neutral-600
-                  transition
-                  duration-500
-                  ease-in-out
-                  transform
-                  border border-transparent
-                  rounded-lg
-                  bg-gray-50
-                "
-              />
-            </div>
-            <div class="form-group mt-1">
-              <Field
-                name="confirmPassword"
-                type="password"
-                placeholder="Confirm Password"
-                class="
-                  input input-bordered
-                  w-full
-                  max-w-xs
-                  w-full
-                  text-base text-neutral-600
-                  transition
-                  duration-500
-                  ease-in-out
-                  transform
-                  border border-transparent
-                  rounded-lg
-                  bg-gray-50
-                "
-              />
-            </div>
-<<<<<<< HEAD
-            </div>
-            </div> 
-            </div>
-            <div class="addressContainer mb-5" >
-              <div class="flex flex-col justify-center drop-shadow-lg border-solid border-2 border-black-200 rounded-lg py-8 sm:px-8 lg:px-8" style="background-color:#dbdbdb">
-=======
-            <div class="addressContainer">
-              <div
-                class="box-shadow: 0 4px 8px rgba(0,0,0,0.2)"
-                style="background-color: #dbdbdb"
-              >
->>>>>>> fa37104855ad9f31ba08eeeef80669074d045b3e
-                <div class="form-group mt-1">
-                  <Field
-                    name="address"
-                    type="text"
-                    placeholder="Address"
-                    class="
-                      input input-bordered
-                      w-full
-                      max-w-xs
-                      w-full
-                      text-base text-neutral-600
-                      transition
-                      duration-500
-                      ease-in-out
-                      transform
-                      border border-transparent
-                      rounded-lg
-                      bg-gray-50
-                    "
-                  />
-                </div>
-                <div class="form-group mt-1">
-                  <Field
-                    name="companyName"
-                    type="text"
-                    placeholder="Company Name"
-                    class="
-                      input input-bordered
-                      w-full
-                      max-w-xs
-                      w-full
-                      text-base text-neutral-600
-                      transition
-                      duration-500
-                      ease-in-out
-                      transform
-                      border border-transparent
-                      rounded-lg
-                      bg-gray-50
-                    "
-                  />
-                </div>
-                <div class="form-group mt-1">
-                  <Field
-                    name="street"
-                    type="text"
-                    placeholder="Street"
-                    class="
-                      input input-bordered
-                      w-full
-                      max-w-xs
-                      w-full
-                      text-base text-neutral-600
-                      transition
-                      duration-500
-                      ease-in-out
-                      transform
-                      border border-transparent
-                      rounded-lg
-                      bg-gray-50
-                    "
-                  />
-                </div>
-                <div class="form-group mt-1">
-                  <select
-                    name="country"
-                    id="country"
-                    placeholder="Country"
-                    class="
-                      input input-bordered
-                      w-full
-                      max-w-xs
-                      w-full
-                      text-base text-neutral-600
-                      transition
-                      duration-500
-                      ease-in-out
-                      transform
-                      border border-transparent
-                      rounded-lg
-                      bg-gray-50
-                    "
-                  >
-                    <option value="select country">select country</option>
-                    <option value="US">US</option>
-                    <option value="AF">Afghanistan</option>
-                    <option value="AX">Aland Islands</option>
-                    <option value="AL">Albania</option>
-                    <option value="DZ">Algeria</option>
-                    <option value="AS">American Samoa</option>
-                    <option value="AD">Andorra</option>
-                    <option value="AO">Angola</option>
-                    <option value="AI">Anguilla</option>
-                    <option value="AQ">Antarctica</option>
-                    <option value="AG">Antigua and Barbuda</option>
-                    <option value="AR">Argentina</option>
-                    <option value="AM">Armenia</option>
-                    <option value="AW">Aruba</option>
-                    <option value="AU">Australia</option>
-                    <option value="AT">Austria</option>
-                    <option value="AZ">Azerbaijan</option>
-                    <option value="BS">Bahamas</option>
-                    <option value="BH">Bahrain</option>
-                    <option value="BD">Bangladesh</option>
-                    <option value="BB">Barbados</option>
-                    <option value="BY">Belarus</option>
-                    <option value="BE">Belgium</option>
-                    <option value="BZ">Belize</option>
-                    <option value="BJ">Benin</option>
-                    <option value="BM">Bermuda</option>
-                    <option value="BT">Bhutan</option>
-                    <option value="BO">Bolivia</option>
-                    <option value="BQ">Bonaire, Sint Eustatius and Saba</option>
-                    <option value="BA">Bosnia and Herzegovina</option>
-                    <option value="BW">Botswana</option>
-                    <option value="BV">Bouvet Island</option>
-                    <option value="BR">Brazil</option>
-                    <option value="IO">British Indian Ocean Territory</option>
-                    <option value="BN">Brunei Darussalam</option>
-                    <option value="BG">Bulgaria</option>
-                    <option value="BF">Burkina Faso</option>
-                    <option value="BI">Burundi</option>
-                    <option value="KH">Cambodia</option>
-                    <option value="CM">Cameroon</option>
-                    <option value="CA">Canada</option>
-                    <option value="CV">Cape Verde</option>
-                    <option value="KY">Cayman Islands</option>
-                    <option value="CF">Central African Republic</option>
-                    <option value="TD">Chad</option>
-                    <option value="CL">Chile</option>
-                    <option value="CN">China</option>
-                    <option value="CX">Christmas Island</option>
-                    <option value="CC">Cocos (Keeling) Islands</option>
-                    <option value="CO">Colombia</option>
-                    <option value="KM">Comoros</option>
-                    <option value="CG">Congo</option>
-                    <option value="CD">
-                      Congo, Democratic Republic of the Congo
-                    </option>
-                    <option value="CK">Cook Islands</option>
-                    <option value="CR">Costa Rica</option>
-                    <option value="CI">Cote D'Ivoire</option>
-                    <option value="HR">Croatia</option>
-                    <option value="CU">Cuba</option>
-                    <option value="CW">Curacao</option>
-                    <option value="CY">Cyprus</option>
-                    <option value="CZ">Czech Republic</option>
-                    <option value="DK">Denmark</option>
-                    <option value="DJ">Djibouti</option>
-                    <option value="DM">Dominica</option>
-                    <option value="DO">Dominican Republic</option>
-                    <option value="EC">Ecuador</option>
-                    <option value="EG">Egypt</option>
-                    <option value="SV">El Salvador</option>
-                    <option value="GQ">Equatorial Guinea</option>
-                    <option value="ER">Eritrea</option>
-                    <option value="EE">Estonia</option>
-                    <option value="ET">Ethiopia</option>
-                    <option value="FK">Falkland Islands (Malvinas)</option>
-                    <option value="FO">Faroe Islands</option>
-                    <option value="FJ">Fiji</option>
-                    <option value="FI">Finland</option>
-                    <option value="FR">France</option>
-                    <option value="GF">French Guiana</option>
-                    <option value="PF">French Polynesia</option>
-                    <option value="TF">French Southern Territories</option>
-                    <option value="GA">Gabon</option>
-                    <option value="GM">Gambia</option>
-                    <option value="GE">Georgia</option>
-                    <option value="DE">Germany</option>
-                    <option value="GH">Ghana</option>
-                    <option value="GI">Gibraltar</option>
-                    <option value="GR">Greece</option>
-                    <option value="GL">Greenland</option>
-                    <option value="GD">Grenada</option>
-                    <option value="GP">Guadeloupe</option>
-                    <option value="GU">Guam</option>
-                    <option value="GT">Guatemala</option>
-                    <option value="GG">Guernsey</option>
-                    <option value="GN">Guinea</option>
-                    <option value="GW">Guinea-Bissau</option>
-                    <option value="GY">Guyana</option>
-                    <option value="HT">Haiti</option>
-                    <option value="HM">
-                      Heard Island and Mcdonald Islands
-                    </option>
-                    <option value="VA">Holy See (Vatican City State)</option>
-                    <option value="HN">Honduras</option>
-                    <option value="HK">Hong Kong</option>
-                    <option value="HU">Hungary</option>
-                    <option value="IS">Iceland</option>
-                    <option value="IN">India</option>
-                    <option value="ID">Indonesia</option>
-                    <option value="IR">Iran, Islamic Republic of</option>
-                    <option value="IQ">Iraq</option>
-                    <option value="IE">Ireland</option>
-                    <option value="IM">Isle of Man</option>
-                    <option value="IL">Israel</option>
-                    <option value="IT">Italy</option>
-                    <option value="JM">Jamaica</option>
-                    <option value="JP">Japan</option>
-                    <option value="JE">Jersey</option>
-                    <option value="JO">Jordan</option>
-                    <option value="KZ">Kazakhstan</option>
-                    <option value="KE">Kenya</option>
-                    <option value="KI">Kiribati</option>
-                    <option value="KP">
-                      Korea, Democratic People's Republic of
-                    </option>
-                    <option value="KR">Korea, Republic of</option>
-                    <option value="XK">Kosovo</option>
-                    <option value="KW">Kuwait</option>
-                    <option value="KG">Kyrgyzstan</option>
-                    <option value="LA">Lao People's Democratic Republic</option>
-                    <option value="LV">Latvia</option>
-                    <option value="LB">Lebanon</option>
-                    <option value="LS">Lesotho</option>
-                    <option value="LR">Liberia</option>
-                    <option value="LY">Libyan Arab Jamahiriya</option>
-                    <option value="LI">Liechtenstein</option>
-                    <option value="LT">Lithuania</option>
-                    <option value="LU">Luxembourg</option>
-                    <option value="MO">Macao</option>
-                    <option value="MK">
-                      Macedonia, the Former Yugoslav Republic of
-                    </option>
-                    <option value="MG">Madagascar</option>
-                    <option value="MW">Malawi</option>
-                    <option value="MY">Malaysia</option>
-                    <option value="MV">Maldives</option>
-                    <option value="ML">Mali</option>
-                    <option value="MT">Malta</option>
-                    <option value="MH">Marshall Islands</option>
-                    <option value="MQ">Martinique</option>
-                    <option value="MR">Mauritania</option>
-                    <option value="MU">Mauritius</option>
-                    <option value="YT">Mayotte</option>
-                    <option value="MX">Mexico</option>
-                    <option value="FM">Micronesia, Federated States of</option>
-                    <option value="MD">Moldova, Republic of</option>
-                    <option value="MC">Monaco</option>
-                    <option value="MN">Mongolia</option>
-                    <option value="ME">Montenegro</option>
-                    <option value="MS">Montserrat</option>
-                    <option value="MA">Morocco</option>
-                    <option value="MZ">Mozambique</option>
-                    <option value="MM">Myanmar</option>
-                    <option value="NA">Namibia</option>
-                    <option value="NR">Nauru</option>
-                    <option value="NP">Nepal</option>
-                    <option value="NL">Netherlands</option>
-                    <option value="AN">Netherlands Antilles</option>
-                    <option value="NC">New Caledonia</option>
-                    <option value="NZ">New Zealand</option>
-                    <option value="NI">Nicaragua</option>
-                    <option value="NE">Niger</option>
-                    <option value="NG">Nigeria</option>
-                    <option value="NU">Niue</option>
-                    <option value="NF">Norfolk Island</option>
-                    <option value="MP">Northern Mariana Islands</option>
-                    <option value="NO">Norway</option>
-                    <option value="OM">Oman</option>
-                    <option value="PK">Pakistan</option>
-                    <option value="PW">Palau</option>
-                    <option value="PS">Palestinian Territory, Occupied</option>
-                    <option value="PA">Panama</option>
-                    <option value="PG">Papua New Guinea</option>
-                    <option value="PY">Paraguay</option>
-                    <option value="PE">Peru</option>
-                    <option value="PH">Philippines</option>
-                    <option value="PN">Pitcairn</option>
-                    <option value="PL">Poland</option>
-                    <option value="PT">Portugal</option>
-                    <option value="PR">Puerto Rico</option>
-                    <option value="QA">Qatar</option>
-                    <option value="RE">Reunion</option>
-                    <option value="RO">Romania</option>
-                    <option value="RU">Russian Federation</option>
-                    <option value="RW">Rwanda</option>
-                    <option value="BL">Saint Barthelemy</option>
-                    <option value="SH">Saint Helena</option>
-                    <option value="KN">Saint Kitts and Nevis</option>
-                    <option value="LC">Saint Lucia</option>
-                    <option value="MF">Saint Martin</option>
-                    <option value="PM">Saint Pierre and Miquelon</option>
-                    <option value="VC">Saint Vincent and the Grenadines</option>
-                    <option value="WS">Samoa</option>
-                    <option value="SM">San Marino</option>
-                    <option value="ST">Sao Tome and Principe</option>
-                    <option value="SA">Saudi Arabia</option>
-                    <option value="SN">Senegal</option>
-                    <option value="RS">Serbia</option>
-                    <option value="CS">Serbia and Montenegro</option>
-                    <option value="SC">Seychelles</option>
-                    <option value="SL">Sierra Leone</option>
-                    <option value="SG">Singapore</option>
-                    <option value="SX">Sint Maarten</option>
-                    <option value="SK">Slovakia</option>
-                    <option value="SI">Slovenia</option>
-                    <option value="SB">Solomon Islands</option>
-                    <option value="SO">Somalia</option>
-                    <option value="ZA">South Africa</option>
-                    <option value="GS">
-                      South Georgia and the South Sandwich Islands
-                    </option>
-                    <option value="SS">South Sudan</option>
-                    <option value="ES">Spain</option>
-                    <option value="LK">Sri Lanka</option>
-                    <option value="SD">Sudan</option>
-                    <option value="SR">Suriname</option>
-                    <option value="SJ">Svalbard and Jan Mayen</option>
-                    <option value="SZ">Swaziland</option>
-                    <option value="SE">Sweden</option>
-                    <option value="CH">Switzerland</option>
-                    <option value="SY">Syrian Arab Republic</option>
-                    <option value="TW">Taiwan, Province of China</option>
-                    <option value="TJ">Tajikistan</option>
-                    <option value="TZ">Tanzania, United Republic of</option>
-                    <option value="TH">Thailand</option>
-                    <option value="TL">Timor-Leste</option>
-                    <option value="TG">Togo</option>
-                    <option value="TK">Tokelau</option>
-                    <option value="TO">Tonga</option>
-                    <option value="TT">Trinidad and Tobago</option>
-                    <option value="TN">Tunisia</option>
-                    <option value="TR">Turkey</option>
-                    <option value="TM">Turkmenistan</option>
-                    <option value="TC">Turks and Caicos Islands</option>
-                    <option value="TV">Tuvalu</option>
-                    <option value="UG">Uganda</option>
-                    <option value="UA">Ukraine</option>
-                    <option value="AE">United Arab Emirates</option>
-                    <option value="GB">United Kingdom</option>
-                    <option value="US">United States</option>
-                    <option value="UM">
-                      United States Minor Outlying Islands
-                    </option>
-                    <option value="UY">Uruguay</option>
-                    <option value="UZ">Uzbekistan</option>
-                    <option value="VU">Vanuatu</option>
-                    <option value="VE">Venezuela</option>
-                    <option value="VN">Viet Nam</option>
-                    <option value="VG">Virgin Islands, British</option>
-                    <option value="VI">Virgin Islands, U.s.</option>
-                    <option value="WF">Wallis and Futuna</option>
-                    <option value="EH">Western Sahara</option>
-                    <option value="YE">Yemen</option>
-                    <option value="ZM">Zambia</option>
-                    <option value="ZW">Zimbabwe</option>
-                  </select>
-                </div>
-                <div class="form-group mt-1">
-                  <Field
-                    name="city"
-                    type="text"
-                    placeholder="City"
-                    class="
-                      input input-bordered
-                      w-full
-                      max-w-xs
-                      w-full
-                      text-base text-neutral-600
-                      transition
-                      duration-500
-                      ease-in-out
-                      transform
-                      border border-transparent
-                      rounded-lg
-                      bg-gray-50
-                    "
-                  />
-                </div>
-                <div class="form-group mt-1">
-                  <select
-                    name="state"
-                    id="state"
-                    placeholder="State"
-                    class="
-                      input input-bordered
-                      w-full
-                      max-w-xs
-                      w-full
-                      text-base text-neutral-600
-                      transition
-                      duration-500
-                      ease-in-out
-                      transform
-                      border border-transparent
-                      rounded-lg
-                      bg-gray-50
-                    "
-                  >
-                    <option value="select state">Select State</option>
-                    <option
-                      v-for="item in states"
-                      :key="item"
-                      :value="item.value"
-                    >
-                      {{ item.text }}
-                    </option>
-                  </select>
-                </div>
-                <div class="form-group mt-1">
-                  <Field
-                    name="zipCode"
-                    type="number"
-                    placeholder="Zip Code"
-                    class="
-                      input input-bordered
-                      w-full
-                      max-w-xs
-                      w-full
-                      text-base text-neutral-600
-                      transition
-                      duration-500
-                      ease-in-out
-                      transform
-                      border border-transparent
-                      rounded-lg
-                      bg-gray-50
-                    "
-                  />
-                </div>
-              </div>
-            </div>
-<<<<<<< HEAD
-              </div>
-                
-            <div class="contactInformationContainer mb-5">
-              <div class="flex flex-col justify-center drop-shadow-lg border-solid border-2 border-black-200 rounded-lg py-8 sm:px-8 lg:px-8" style="background-color:#dbdbdb">
-                <div class="form-group mt-1">
-                <Field name="email" type="email" placeholder="Email" class="
-=======
-
-            <div class="emailContainer">
-              <div class="form-group mt-1">
-                <Field
-                  name="email"
-                  type="email"
-                  placeholder="Email"
-                  class="
->>>>>>> fa37104855ad9f31ba08eeeef80669074d045b3e
-                    input input-bordered
-                    w-full
-                    max-w-xs
-                    w-full
-                    text-base text-neutral-600
-                    transition
-                    duration-500
-                    ease-in-out
-                    transform
-                    border border-transparent
-                    rounded-lg
-                    bg-gray-50
-                  "
-                />
-              </div>
-              <div class="form-group mt-1">
-                <Field
-                  name="number"
-                  type="number"
-                  placeholder="Phone Number"
-                  class="
-                    input input-bordered
-                    w-full
-                    max-w-xs
-                    w-full
-                    text-base text-neutral-600
-                    transition
-                    duration-500
-                    ease-in-out
-                    transform
-                    border border-transparent
-                    rounded-lg
-                    bg-gray-50
-                  "
-                />
-              </div>
-            </div>
-<<<<<<< HEAD
-              </div>
              
-            <div class="barTypeConetainer mb-5">
-              <div class="flex flex-col justify-center drop-shadow-lg border-solid border-2 border-black-200 rounded-lg py-8 sm:px-8 lg:px-8" style="background-color:#dbdbdb">
-                <div class="form-group mt-1">
-                <select name="barType" id="barType" placeholder= 'Type of Bar' class="
-=======
-            <div class="barTypeConetainer">
-              <div class="form-group mt-1">
-                <select
-                  name="barType"
-                  id="barType"
-                  placeholder="Type of Bar"
-                  class="
->>>>>>> fa37104855ad9f31ba08eeeef80669074d045b3e
-                    input input-bordered
-                    w-full
-                    max-w-xs
-                    w-full
-                    text-base text-neutral-600
-                    transition
-                    duration-500
-                    ease-in-out
-                    transform
-                    border border-transparent
-                    rounded-lg
-                    bg-gray-50
-                  "
+              <div class="username-container mt-3">
+                <div
+                  class="flex flex-col justify-center drop-shadow-lg border-solid border-2 border-black-200 rounded-lg py-8 sm:px-8 lg:px-8"
+                  style="background-color: #dbdbdb"
                 >
-                  <option>Sports Bar</option>
-                </select>
+                  
+                  <div class="form-group mt-1">
+                    <Field
+                      name="username"
+                      type="text"
+                      placeholder="Username"
+                      class="input input-bordered w-full max-w-xs w-full text-base text-neutral-600 transition duration-500 ease-in-out transform border border-transparent rounded-lg bg-gray-50"
+                    />
+                  </div>
+
+                  
+                  <div class="form-group mt-1">
+                    <Field
+                      name="password"
+                      type="password"
+                      placeholder="Password"
+                      class="input input-bordered w-full max-w-xs w-full text-base text-neutral-600 transition duration-500 ease-in-out transform border border-transparent rounded-lg bg-gray-50"
+                    />
+                  </div>
+
+                 
+                  <div class="form-group mt-1">
+                    <Field
+                      name="confirmPassword"
+                      type="password"
+                      placeholder="Confirm Password"
+                      class="input input-bordered w-full max-w-xs w-full text-base text-neutral-600 transition duration-500 ease-in-out transform border border-transparent rounded-lg bg-gray-50"
+                    />
+                  </div>
+                </div>
+
+                
+                <div class="addressContainer mt-5">
+                  <div
+                    class="justify-center drop-shadow-lg border-solid border-2 border-black-200 rounded-lg py-8 sm:px-8 lg:px-8 grid grid-flow-row-dense grid-cols-3 grid-rows-5"
+                    style="background-color: #dbdbdb"
+                  >
+                   
+                    <div class="form-group mt-1 col-span-3">
+                      <Field
+                        name="Name"
+                        type="text"
+                        placeholder="Name"
+                        class="input input-bordered w-full max-w-xs w-full text-base text-neutral-600 transition duration-500 ease-in-out transform border border-transparent rounded-lg bg-gray-50"
+                      />
+                    </div>
+
+                    
+                    <div class="form-group mt-1 col-span-3">
+                      <Field
+                        name="companyName"
+                        type="text"
+                        placeholder="Company Name"
+                        class="input input-bordered w-full max-w-xs w-full text-base text-neutral-600 transition duration-500 ease-in-out transform border border-transparent rounded-lg bg-gray-50"
+                      />
+                    </div>
+
+                    
+                    <div class="form-group mt-1 col-span-3">
+                      <Field
+                        name="street"
+                        type="text"
+                        placeholder="Street"
+                        class="input input-bordered w-full max-w-xs w-full text-base text-neutral-600 transition duration-500 ease-in-out transform border border-transparent rounded-lg bg-gray-50"
+                      />
+                    </div>
+
+                   
+                    <div class="form-group mt-1 mr-1">
+                      <Field
+                        name="city"
+                        type="text"
+                        placeholder="City"
+                        class="input input-bordered w-full max-w-xs w-full text-base text-neutral-600 transition duration-500 ease-in-out transform border border-transparent rounded-lg bg-gray-50"
+                      />
+                    </div>
+
+                   
+                    <div class="form-group mt-1 mr-1">
+                      <select
+                        name="state"
+                        id="state"
+                        placeholder="State"
+                        class="input input-bordered w-full max-w-xs w-full text-base text-neutral-600 transition duration-500 ease-in-out transform border border-transparent rounded-lg bg-gray-50"
+                      >
+                        <option value="select state">Select State</option>
+                        
+                        <option
+                          v-for="item in states"
+                          :key="item"
+                          :value="item.value"
+                        >
+                          {{ item.text }}
+                        </option>
+                      </select>
+                    </div>
+
+                    
+                    <div class="form-group mt-1">
+                      <Field
+                        name="zipCode"
+                        type="number"
+                        placeholder="Zip Code"
+                        class="input input-bordered w-full max-w-xs w-full text-base text-neutral-600 transition duration-500 ease-in-out transform border border-transparent rounded-lg bg-gray-50"
+                      />
+                    </div>
+
+                   
+                    <div class="form-group mt-1 col-span-3">
+                      <select
+                        name="country"
+                        id="country"
+                        placeholder="Country"
+                        class="input input-bordered w-full max-w-xs w-full text-base text-neutral-600 transition duration-500 ease-in-out transform border border-transparent rounded-lg bg-gray-50"
+                      >
+                        <option value="select country">select Country</option>
+                        <option
+                          v-for="item in country"
+                          :key="item"
+                          :value="item.value"
+                        >
+                          {{ item.text }}
+                        </option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="contactInformationContainer mt-5">
+                  <div
+                    class="flex flex-col justify-center drop-shadow-lg border-solid border-2 border-black-200 rounded-lg py-8 sm:px-8 lg:px-8"
+                    style="background-color: #dbdbdb"
+                  >
+                    <div class="form-group mt-1">
+                      <Field
+                        name="email"
+                        type="email"
+                        placeholder="Email"
+                        class="input input-bordered w-full max-w-xs w-full text-base text-neutral-600 transition duration-500 ease-in-out transform border border-transparent rounded-lg bg-gray-50"
+                      />
+                    </div>
+
+                    <div class="form-group mt-1">
+                      <Field
+                        name="number"
+                        type="number"
+                        placeholder="Phone Number"
+                        class="input input-bordered w-full max-w-xs w-full text-base text-neutral-600 transition duration-500 ease-in-out transform border border-transparent rounded-lg bg-gray-50"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                
+                <div class="barTypeConetainer mt-5"></div>
+                <div
+                  class="flex flex-col justify-center drop-shadow-lg border-solid border-2 border-black-200 rounded-lg py-8 sm:px-8 lg:px-8"
+                  style="background-color: #dbdbdb"
+                >
+                  <div class="form-group mt-1">
+                    <select
+                      name="barType"
+                      id="barType"
+                      placeholder="Type of Bar"
+                      class="input input-bordered w-full max-w-xs w-full text-base text-neutral-600 transition duration-500 ease-in-out transform border border-transparent rounded-lg bg-gray-50"
+                    >
+                      <option>Sports Bar</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group mt-1">
+                    <Field
+                      name="number"
+                      type="number"
+                      placeholder="Phone Number"
+                      class="input input-bordered w-full max-w-xs w-full text-base text-neutral-600 transition duration-500 ease-in-out transform border border-transparent rounded-lg bg-gray-50"
+                    />
+                  </div>
+                  <div class="form-group mt-1">
+                    <Field
+                      name="number"
+                      type="number"
+                      placeholder="Phone Number"
+                      class="input input-bordered w-full max-w-xs w-full text-base text-neutral-600 transition duration-500 ease-in-out transform border border-transparent rounded-lg bg-gray-50"
+                    />
+                  </div>
+                  <div class="form-group mt-1">
+                    <Field
+                      name="number"
+                      type="number"
+                      placeholder="Phone Number"
+                      class="input input-bordered w-full max-w-xs w-full text-base text-neutral-600 transition duration-500 ease-in-out transform border border-transparent rounded-lg bg-gray-50"
+                    />
+                  </div>
+                </div>
               </div>
-              <div class="form-group mt-1">
-                <Field
-                  name="number"
-                  type="number"
-                  placeholder="Phone Number"
-                  class="
-                    input input-bordered
-                    w-full
-                    max-w-xs
-                    w-full
-                    text-base text-neutral-600
-                    transition
-                    duration-500
-                    ease-in-out
-                    transform
-                    border border-transparent
-                    rounded-lg
-                    bg-gray-50
-                  "
-                />
+              <div class="form-group mt-5">
+                <button class="btn btn-primary btn-block" :disabled="loading">
+                  Sign Up
+                </button>
               </div>
-              <div class="form-group mt-1">
-                <Field
-                  name="number"
-                  type="number"
-                  placeholder="Phone Number"
-                  class="
-                    input input-bordered
-                    w-full
-                    max-w-xs
-                    w-full
-                    text-base text-neutral-600
-                    transition
-                    duration-500
-                    ease-in-out
-                    transform
-                    border border-transparent
-                    rounded-lg
-                    bg-gray-50
-                  "
-                />
-              </div>
-              <div class="form-group mt-1">
-                <Field
-                  name="number"
-                  type="number"
-                  placeholder="Phone Number"
-                  class="
-                    input input-bordered
-                    w-full
-                    max-w-xs
-                    w-full
-                    text-base text-neutral-600
-                    transition
-                    duration-500
-                    ease-in-out
-                    transform
-                    border border-transparent
-                    rounded-lg
-                    bg-gray-50
-                  "
-                />
-              </div>
-            </div>
-              </div>
-              
-            <div class="form-group mt-1">
-              <button class="btn btn-primary btn-block" :disabled="loading">
-                Sign Up
-              </button>
             </div>
           </Form>
         </div>
@@ -731,6 +244,7 @@ export default {
       successful: false,
       loading: false,
       message: '',
+      //States Array for state select
       states: [
         { value: 'AL', text: 'Alabama (AL)' },
         { value: 'AK', text: 'Alaska (AK)' },
@@ -784,6 +298,265 @@ export default {
         { value: 'WI', text: 'Wisconsin' },
         { value: 'WY', text: 'Wyoming' },
       ],
+    //Country Array for country select
+      country: [
+        { value='AF', text: 'Afghanistan' },
+        { value='AX', text: 'Aland Islands' },
+        { value='AL', text: 'Albania' },
+        { value='DZ', text: 'Algeria' },
+        { value='AS', text: 'American Samoa' },
+        { value='AD', text: 'Andorra' },
+        { value='AO', text: 'Angola' },
+        { value='AI', text: 'Anguilla' },
+        { value='AQ', text: 'Antarctica' },
+        { value='AG', text: 'Antigua and Barbuda' },
+        { value='AR', text: 'Argentina' },
+        { value='AM', text: 'Armenia' },
+        { value='AW', text: 'Aruba' },
+        { value='AU', text: 'Australia' },
+        { value='AT', text: 'Austria' },
+        { value='AZ', text: 'Azerbaijan' },
+        { value='BS', text: 'Bahamas' },
+        { value='BH', text: 'Bahrain' },
+        { value='BD', text: 'Bangladesh' },
+        { value='BB', text: 'Barbados' },
+        { value='BY', text: 'Belarus' },
+        { value='BE', text: 'Belgium' },
+        { value='BZ', text: 'Belize' },
+        { value='BJ', text: 'Benin' },
+        { value='BM', text: 'Bermuda' },
+        { value='BT', text: 'Bhutan' },
+        { value='BO', text: 'Bolivia' },
+        { value='BQ', text: 'Bonaire, Sint Eustatius and Saba' },
+        { value='BA', text: 'Bosnia and Herzegovina' },
+        { value='BW', text: 'Botswana' },
+        { value='BV', text: 'Bouvet Island' },
+        { value='BR', text: 'Brazil' },
+        { value='IO', text: 'British Indian Ocean Territory' },
+        { value='BN', text: 'Brunei Darussalam' },
+        { value='BG', text: 'Bulgaria' },
+        { value='BF', text: 'Burkina Faso' },
+        { value='BI', text: 'Burundi' },
+        { value='KH', text: 'Cambodia' },
+        { value='CM', text: 'Cameroon' },
+        { value='CA', text: 'Canada' },
+        { value='CV', text: 'Cape Verde' },
+        { value='KY', text: 'Cayman Islands' },
+        { value='CF', text: 'Central African Republic' },
+        { value='TD', text: 'Chad' },
+        { value='CL', text: 'Chile' },
+        { value='CN', text: 'China' },
+        { value='CX', text: 'Christmas Island' },
+        { value='CC', text: 'Cocos (Keeling) Islands' },
+        { value='CO', text: 'Colombia' },
+        { value='KM', text: 'Comoros' },
+        { value='CG', text: 'Congo' },
+        { value='CD', text: 'Congo, Democratic Republic of the Congo' },
+        { value='CK', text: 'Cook Islands' },
+        { value='CR', text: 'Costa Rica' },
+        { value='CI', text: 'Cote Divoire' },
+        { value='HR', text: 'Croatia' },
+        { value='CU', text: 'Cuba' },
+        { value='CW', text: 'Curacao' },
+        { value='CY', text: 'Cyprus' },
+        { value='CZ', text: 'Czech Republic' },
+        { value='DK', text: 'Denmark' },
+        { value='DJ', text: 'Djibouti' },
+        { value='DM', text: 'Dominica' },
+        { value='DO', text: 'Dominican Republic' },
+        { value='EC', text: 'Ecuador' },
+        { value='EG', text: 'Egypt' },
+        { value='SV', text: 'El Salvador' },
+        { value='GQ', text: 'Equatorial Guinea' },
+        { value='ER', text: 'Eritrea' },
+        { value='EE', text: 'Estonia' },
+        { value='ET', text: 'Ethiopia' },
+        { value='FK', text: 'Falkland Islands' },
+        { value='FO', text: 'Faroe Islands' },
+        { value='FJ', text: 'Fiji' },
+        { value='FI', text: 'Finland' },
+        { value='FR', text: 'France' },
+        { value='GF', text: 'French Guiana' },
+        { value='PF', text: 'French Polynesia' },
+        { value='TF', text: 'French Southern Territories' },
+        { value='GA', text: 'Gabon' },
+        { value='GM', text: 'Gambia' },
+        { value='GE', text: 'Georgia' },
+        { value='DE', text: 'Germany' },
+        { value='GH', text: 'Ghana' },
+        { value='GI', text: 'Gibraltar' },
+        { value='GR', text: 'Greece' },
+        { value='GL', text: 'Greenland' },
+        { value='GD', text: 'Grenada' },
+        { value='GP', text: 'Guadeloupe' },
+        { value='GU', text: 'Guam' },
+        { value='GT', text: 'Guatemala' },
+        { value='GG', text: 'Guernsey' },
+        { value='GN', text: 'Guinea' },
+        { value='GW', text: 'Guinea-Bissau' },
+        { value='GY', text: 'Guyana' },
+        { value='HT', text: 'Haiti' },
+        { value='HM', text: 'Heard Island and Mcdonald Islands' },
+        { value='VA', text: 'Holy See' },
+        { value='HN', text: 'Honduras' },
+        { value='HK', text: 'Hong Kong' },
+        { value='HU', text: 'Hungary' },
+        { value='IS', text: 'Iceland' },
+        { value='IN', text: 'India' },
+        { value='ID', text: 'Indonesia' },
+        { value='IR', text: 'Iran, Islamic Republic of' },
+        { value='IQ', text: 'Iraq' },
+        { value='IE', text: 'Ireland' },
+        { value='IM', text: 'Isle of Man' },
+        { value='IL', text: 'Israel' },
+        { value='IT', text: 'Italy' },
+        { value='JM', text: 'Jamaica' },
+        { value='JP', text: 'Japan' },
+        { value='JE', text: 'Jersey' },
+        { value='JO', text: 'Jordan' },
+        { value='KZ', text: 'Kazakhstan' },
+        { value='KE', text: 'Kenya' },
+        { value='KI', text: 'Kiribati' },
+        { value='KP', text: 'Democratic Peoples Republic of Korea' },
+        { value='KR', text: 'Republic of Korea' },
+        { value='XK', text: 'Kosovo' },
+        { value='KW', text: 'Kuwait' },
+        { value='KG', text: 'Kyrgyzstan' },
+        { value='LA', text: 'Peoples Democratic Republic of Lao' },
+        { value='LV', text: 'Latvia' },
+        { value='LB', text: 'Lebanon' },
+        { value='LS', text: 'Lesotho' },
+        { value='LR', text: 'Liberia' },
+        { value='LY', text: 'Libyan Arab Jamahiriya' },
+        { value='LI', text: 'Liechtenstein' },
+        { value='LT', text: 'Lithuania' },
+        { value='LU', text: 'Luxembourg' },
+        { value='MO', text: 'Macao' },
+        { value='MK', text: 'Macedonia, the Former Yugoslav Republic of' },
+        { value='MG', text: 'Madagascar' },
+        { value='MW', text: 'Malawi' },
+        { value='MY', text: 'Malaysia' },
+        { value='MV', text: 'Maldives' },
+        { value='ML', text: 'Mali' },
+        { value='MT', text: 'Malta' },
+        { value='MH', text: 'Marshall Islands' },
+        { value='MQ', text: 'Martinique' },
+        { value='MR', text: 'Mauritania' },
+        { value='MU', text: 'Mauritius' },
+        { value='YT', text: 'Mayotte' },
+        { value='MX', text: 'Mexico' },
+        { value='FM', text: 'Micronesia, Federated States of' },
+        { value='MD', text: 'Moldova, Republic of' },
+        { value='MC', text: 'Monaco' },
+        { value='MN', text: 'Mongolia' },
+        { value='ME', text: 'Montenegro' },
+        { value='MS', text: 'Montserrat' },
+        { value='MA', text: 'Morocco' },
+        { value='MZ', text: 'Mozambique' },
+        { value='MM', text: 'Myanmar' },
+        { value='NA', text: 'Namibia' },
+        { value='NR', text: 'Nauru' },
+        { value='NP', text: 'Nepal' },
+        { value='NL', text: 'Netherlands' },
+        { value='AN', text: 'Netherlands Antilles' },
+        { value='NC', text: 'New Caledonia' },
+        { value='NZ', text: 'New Zealand' },
+        { value='NI', text: 'Nicaragua' },
+        { value='NE', text: 'Niger' },
+        { value='NG', text: 'Nigeria' },
+        { value='NU', text: 'Niue' },
+        { value='NF', text: 'Norfolk Island' },
+        { value='MP', text: 'Northern Mariana Islands' },
+        { value='NO', text: 'Norway' },
+        { value='OM', text: 'Oman' },
+        { value='PK', text: 'Pakistan' },
+        { value='PW', text: 'Palau' },
+        { value='PS', text: 'Palestinian Territory, Occupied' },
+        { value='PA', text: 'Panama' },
+        { value='PG', text: 'Papua New Guinea' },
+        { value='PY', text: 'Paraguay' },
+        { value='PE', text: 'Peru' },
+        { value='PH', text: 'Philippines' },
+        { value='PN', text: 'Pitcairn' },
+        { value='PL', text: 'Poland' },
+        { value='PT', text: 'Portugal' },
+        { value='PR', text: 'Puerto Rico' },
+        { value='QA', text: 'Qatar' },
+        { value='RE', text: 'Reunion' },
+        { value='RO', text: 'Romania' },
+        { value='RU', text: 'Russian Federation' },
+        { value='RW', text: 'Rwanda' },
+        { value='BL', text: 'Saint Barthelemy' },
+        { value='SH', text: 'Saint Helena' },
+        { value='KN', text: 'Saint Kitts and Nevis' },
+        { value='LC', text: 'Saint Lucia' },
+        { value='MF', text: 'Saint Martin' },
+        { value='PM', text: 'Saint Pierre and Miquelon' },
+        { value='VC', text: 'Saint Vincent and the Grenadines' },
+        { value='WS', text: 'Samoa' },
+        { value='SM', text: 'San Marino' },
+        { value='ST', text: 'Sao Tome and Principe' },
+        { value='SA', text: 'Saudi Arabia' },
+        { value='SN', text: 'Senegal' },
+        { value='RS', text: 'Serbia' },
+        { value='CS', text: 'Serbia and Montenegro' },
+        { value='SC', text: 'Seychelles' },
+        { value='SL', text: 'Sierra Leone' },
+        { value='SG', text: 'Singapore' },
+        { value='SX', text: 'Sint Maarten' },
+        { value='SK', text: 'Slovakia' },
+        { value='SI', text: 'Slovenia' },
+        { value='SB', text: 'Solomon Islands' },
+        { value='SO', text: 'Somalia' },
+        { value='ZA', text: 'South Africa' },
+        { value='GS', text: 'South Georgia and the South Sandwich Islands' },
+        { value='SS', text: 'South Sudan' },
+        { value='ES', text: 'Spain' },
+        { value='LK', text: 'Sri Lanka' },
+        { value='SD', text: 'Sudan' },
+        { value='SR', text: 'Suriname' },
+        { value='SJ', text: 'Svalbard and Jan Mayen' },
+        { value='SZ', text: 'Swaziland' },
+        { value='SE', text: 'Sweden' },
+        { value='CH', text: 'Switzerland' },
+        { value='SY', text: 'Syrian Arab Republic' },
+        { value='TW', text: 'Taiwan, Province of China' },
+        { value='TJ', text: 'Tajikistan' },
+        { value='TZ', text: 'Tanzania, United Republic of' },
+        { value='TH', text: 'Thailand' },
+        { value='TL', text: 'Timor-Leste' },
+        { value='TG', text: 'Togo' },
+        { value='TK', text: 'Tokelau' },
+        { value='TO', text: 'Tonga' },
+        { value='TT', text: 'Trinidad and Tobago' },
+        { value='TN', text: 'Tunisia' },
+        { value='TR', text: 'Turkey' },
+        { value='TM', text: 'Turkmenistan' },
+        { value='TC', text: 'Turks and Caicos Islands' },
+        { value='TV', text: 'Tuvalu' },
+        { value='UG', text: 'Uganda' },
+        { value='UA', text: 'Ukraine' },
+        { value='AE', text: 'United Arab Emirates' },
+        { value='GB', text: 'United Kingdom' },
+        { value='US', text: 'United States' },
+        { value='UM', text: 'United States Minor Outlying Islands' },
+        { value='UY', text: 'Uruguay' },
+        { value='UZ', text: 'Uzbekistan' },
+        { value='VU', text: 'Vanuatu' },
+        { value='VE', text: 'Venezuela' },
+        { value='VN', text: 'Viet Nam' },
+        { value='VG', text: 'Virgin Islands, British' },
+        { value='VI', text: 'Virgin Islands, U.s.' },
+        { value='WF', text: 'Wallis and Futuna' },
+        { value='EH', text: 'Western Sahara' },
+        { value='YE', text: 'Yemen' },
+        { value='ZM', text: 'Zambia' },
+        { value='ZW', text: 'Zimbabwe' }
+      ],
+
+    BarTypes: [
+      { value:'', text: ''}
+    ],
     };
   },
   computed: {
