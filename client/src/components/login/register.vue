@@ -34,7 +34,9 @@
             "></h1>
           <Form @submit="handleRegister">
             <div v-if="!successful">
-              <div class="form-group mt-1">
+              <div class="username-container mt-3 mb-5">
+              <div class="flex flex-col justify-center drop-shadow-lg border-solid border-2 border-black-200 rounded-lg py-8 sm:px-8 lg:px-8" style="background-color:#dbdbdb">
+                <div class="form-group mt-1">
                 <Field name="username" type="text" placeholder="Username" class="
                     input input-bordered
                     w-full
@@ -50,8 +52,6 @@
                     bg-gray-50
                   " />
               </div>
-
-            </div>
             <div class="form-group mt-1">
               <Field name="password" type="password" placeholder="Password" class="
                     input input-bordered
@@ -84,8 +84,11 @@
                     bg-gray-50
                   " />
             </div>
-            <div class="addressContainer" >
-              <div class="box-shadow: 0 4px 8px rgba(0,0,0,0.2)" style="background-color:#dbdbdb">
+            </div>
+            </div> 
+            </div>
+            <div class="addressContainer mb-5" >
+              <div class="flex flex-col justify-center drop-shadow-lg border-solid border-2 border-black-200 rounded-lg py-8 sm:px-8 lg:px-8" style="background-color:#dbdbdb">
                 <div class="form-group mt-1">
                   <Field name="address" type="text" placeholder="Address" class="
                     input input-bordered
@@ -509,8 +512,9 @@
             </div>
               </div>
                 
-            <div class="emailContainer" >
-              <div class="form-group mt-1">
+            <div class="contactInformationContainer mb-5">
+              <div class="flex flex-col justify-center drop-shadow-lg border-solid border-2 border-black-200 rounded-lg py-8 sm:px-8 lg:px-8" style="background-color:#dbdbdb">
+                <div class="form-group mt-1">
                 <Field name="email" type="email" placeholder="Email" class="
                     input input-bordered
                     w-full
@@ -543,8 +547,11 @@
                   " />
               </div>
             </div>
-            <div class="barTypeConetainer">
-              <div class="form-group mt-1">
+              </div>
+             
+            <div class="barTypeConetainer mb-5">
+              <div class="flex flex-col justify-center drop-shadow-lg border-solid border-2 border-black-200 rounded-lg py-8 sm:px-8 lg:px-8" style="background-color:#dbdbdb">
+                <div class="form-group mt-1">
                 <select name="barType" id="barType" placeholder= 'Type of Bar' class="
                     input input-bordered
                     w-full
@@ -609,6 +616,8 @@
                   " />
               </div>
             </div>
+              </div>
+              
             <div class="form-group mt-1">
               <button class="btn btn-primary btn-block" :disabled="loading">
                 Sign Up
