@@ -6,6 +6,7 @@ import '@vue/runtime-core'
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     Bar: typeof import('./components/bar/index.vue')['default']
+    Base: typeof import('./components/layouts/base.vue')['default']
     BaseHeader: typeof import('./components/layouts/BaseHeader.vue')['default']
     BaseSide: typeof import('./components/layouts/BaseSide.vue')['default']
     Cabniet: typeof import('./components/cabniet/index.vue')['default']
