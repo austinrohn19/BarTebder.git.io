@@ -205,8 +205,6 @@ export default {
     },
     handleLogin(user) {
       this.loading = true;
-      console.log('???');
-      console.log(user);
       this.$store.dispatch('auth/login', user).then(
         () => {
           this.$router.push('/profile');
