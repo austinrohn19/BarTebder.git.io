@@ -134,7 +134,7 @@
                         placeholder="Country"
                         class="input input-bordered w-full max-w-xs w-full text-base text-neutral-600 transition duration-500 ease-in-out transform border border-transparent rounded-lg bg-gray-50"
                       >
-                        <option value="select country">select Country</option>
+                        <option value="select country">Select Country</option>
                         <option
                           v-for="item in countries"
                           :key="item"
