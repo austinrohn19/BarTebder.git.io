@@ -5,21 +5,29 @@ import '@vue/runtime-core'
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    AlcoholInventory: typeof import('./components/cabniet/alcoholInventory.vue')['default']
     Bar: typeof import('./components/bar/index.vue')['default']
     Base: typeof import('./components/layouts/base.vue')['default']
     BaseHeader: typeof import('./components/layouts/BaseHeader.vue')['default']
     BaseSide: typeof import('./components/layouts/BaseSide.vue')['default']
     Cabniet: typeof import('./components/cabniet/index.vue')['default']
+    Counter: typeof import('./components/bar/counter.vue')['default']
     Dashboard: typeof import('./components/dashboard.vue')['default']
+    Drink: typeof import('./components/recipes/drink.vue')['default']
+    Fridges: typeof import('./components/bar/fridges.vue')['default']
     HelloWorld: typeof import('./components/HelloWorld.vue')['default']
     Login: typeof import('./components/login/login.vue')['default']
     Options: typeof import('./components/options.vue')['default']
+    ProduceInventory: typeof import('./components/cabniet/produceInventory.vue')['default']
     Recipes: typeof import('./components/recipes/index.vue')['default']
     Register: typeof import('./components/login/register.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     Scales: typeof import('./components/scales/index.vue')['default']
     Servers: typeof import('./components/servers/index.vue')['default']
+    ServerTracker: typeof import('./components/servers/serverTracker.vue')['default']
+    Shelfs: typeof import('./components/bar/shelfs.vue')['default']
+    Stats: typeof import('./components/cabniet/stats.vue')['default']
     Summary: typeof import('./components/summary/index.vue')['default']
   }
 }

@@ -1,10 +1,5 @@
 <template>
-  <nav>
-    <router-link v-if="loggedIn || true" to="/serverTracker"
-      >server tracker</router-link
-    ><br />
-  </nav>
-  <router-view />
+  <section></section>
 </template>
 
 <script>
