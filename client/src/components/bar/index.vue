@@ -1,5 +1,12 @@
 <template>
-  <section></section>
+  <nav>
+    <router-link v-if="loggedIn || true" to="/counter">counter</router-link
+    ><br />
+    <router-link v-if="loggedIn || true" to="/fridges">fridges</router-link
+    ><br />
+    <router-link v-if="loggedIn || true" to="/shelfs">shelfs</router-link><br />
+  </nav>
+  <router-view />
 </template>
 
 <script>

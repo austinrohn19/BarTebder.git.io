@@ -37,6 +37,42 @@ const routes = [
         path: '/summary',
         component: () => import('@/components/summary/index.vue'),
     },
+    {
+        path: '/bar/counter',
+        component: () => import('@/components/bar/counter.vue'),
+    },
+    {
+        path: '/bar/fridge',
+        component: () => import('@/components/bar/fridges.vue'),
+    },
+    {
+        path: '/bar/shelfs',
+        component: () => import('@/components/bar/shelfs.vue'),
+    },
+    {
+        path: '/cabniet/stats',
+        component: () => import('@/components/cabniet/stats.vue'),
+    },
+    {
+        path: '/cabniet/produce-inventory',
+        component: () => import('@/components/cabniet/produceInventory.vue'),
+    },
+    {
+        path: '/cabniet/alcohol-inventory',
+        component: () => import('@/components/cabniet/alcoholInventory.vue'),
+    },
+    {
+        path: '/recipes/addDrink',
+        component: () => import('@/components/recipes/drink.vue'),
+    },
+    {
+        path: '/recipes/editDrink',
+        component: () => import('@/components/recipes/drink.vue'),
+    },
+    {
+        path: '/recipes/serverTracker',
+        component: () => import('@/components/servers/serverTracker.vue'),
+    },
 ]
 
 const router = createRouter({
