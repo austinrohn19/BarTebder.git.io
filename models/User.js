@@ -21,25 +21,108 @@ User.init(
             type: DataTypes.INTEGER,
             allowNull: false,
             primaryKey: true,
-            autoIncrement: true
+            autoIncrement: true,
         },
         username: {
             type: DataTypes.STRING,
-            allowNull: false
-        },
-        email: {
-            type: DataTypes.STRING,
-            allowNull: false
+            allowNull: false,
+            required: true,
         },
         password: {
             type: DataTypes.STRING,
             allowNull: false,
+            minlength: [8, 'your password must be at least 8 characters.'],
+            select: false,
             validate: {
-                len: [4]
+                len: [8]
             }
-        }
-    },
-    {
+        },
+        //address information data tpyes
+        name:{
+           type: DataTypes.STRING,
+           allowNull: false,
+           required: true,
+        },
+        companyName:{
+            type: DataTypes.STRING,
+            allowNull: false,
+            required: true, 
+        },
+        street:{
+            type: DataTypes.STRING, 
+            allowNull: false,
+            required: true, 
+        },
+        city:{
+            type: DataTypes.STRING,
+            allowNull: false, 
+            required: true,
+        },
+        state:{
+            type: DataTypes.STRING,
+            allowNull: false,
+            required: true,      
+        },
+        zipCode:{
+            type: DataTypes.STRING, 
+            allowNull: false, 
+            required: true,
+        },
+        country:{
+            type: DataTypes.STRING,
+            allowNull: false,
+            required: true, 
+        },
+        //contact information data tpyes
+        name: {
+            type: DataTypes.STRING, 
+            allowNull: false,
+            required: true,
+        },
+        email: {
+            type: DataTypes.STRING,
+            allowNull: false, 
+            required: [true,'Please enter your Email address'],
+            validate:{ 
+                isEmail: true}
+            
+        },
+        number: {
+            type: DataTypes.STRING,
+            allowNull: false,
+            required: false,
+        },
+        //Bar Information Data tpyes
+        barTypes: {
+            type: DataTypes.STRING, 
+            allowNull: false,
+            required: true,
+        },
+        LED:{
+            type: DataTypes.BOOLEAN,
+            allowNull: false,
+        },
+        Key:{
+            type: DataTypes.STRING,
+            allowNull: false,
+        },
+        POS: {
+            type: DataTypes.BOOLEAN,
+            allowNull: false,
+        },
+        POSBrand: {
+            type: DataTypes.STRING,
+            allowNull: false,
+        },
+        vender: {
+            type: DataTypes.BOOLEAN,
+            allowNull: false,
+        },
+        VenderIntergration: {
+            type: DataTypes.STRING,
+            allowNull: false,
+        },
+    })
         hooks: {
             // set up beforeCreate lifecycle "hook" functionality
             async beforeCreate(newUserData) {

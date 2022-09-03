@@ -86,7 +86,7 @@
                   >
                     <div class="form-group mt-1 col-span-3">
                       <Field
-                        name="Name"
+                        name="name"
                         type="text"
                         placeholder="Name"
                         class="input input-bordered w-full max-w-xs w-full text-base text-neutral-600 transition duration-500 ease-in-out transform border border-transparent rounded-lg bg-gray-50"
@@ -154,7 +154,7 @@
                         placeholder="Country"
                         class="input input-bordered w-full max-w-xs w-full text-base text-neutral-600 transition duration-500 ease-in-out transform border border-transparent rounded-lg bg-gray-50"
                       >
-                        <option value="select country">select Country</option>
+                        <option value="select country">Select Country</option>
                         <option
                           v-for="item in countries"
                           :key="item"
@@ -235,7 +235,7 @@
                     <input
                       type="checkbox"
                       id="LED lights"
-                      name="LED Lights"
+                      name="LED"
                       value="Unlock Key"
                     />
                     <label for="LED Lights"> LED Lights</label>
@@ -262,8 +262,8 @@
 
                   <div class="form-group mt-1 col-span-2">
                     <select
-                      name="POS"
-                      id="POS"
+                      name="POSBrand"
+                      id="POSBrand"
                       placeholder="POS Brand Registration"
                       class="input input-bordered w-full max-w-xs w-full text-base text-neutral-600 transition duration-500 ease-in-out transform border border-transparent rounded-lg bg-gray-50"
                     >
@@ -290,7 +290,7 @@
 
                   <div class="form-group mt-1 col-span-2">
                     <Field
-                      name="Vender Intergration"
+                      name="VenderIntergration"
                       type="Text"
                       placeholder="Key"
                       class="input input-bordered w-full max-w-xs w-full text-base text-neutral-600 transition duration-500 ease-in-out transform border border-transparent rounded-lg bg-gray-50"
@@ -317,7 +317,7 @@
                   <button
                     class="w-auto px-2 py-1 my-2 mr-2 transition duration-500 ease-in-out transform border-2 border-black rounded-md text-blueGray-500 hover:text-blueGray-600 text-md focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2 hover:bg-blueGray-100"
                   >
-                    Upload a file
+                    Upload a .CSV file
                   </button>
                 </div>
 
@@ -338,7 +338,7 @@
                   <button
                     class="w-auto px-2 py-1 my-2 mr-2 transition duration-500 ease-in-out transform border-2 border-black rounded-md text-blueGray-500 hover:text-blueGray-600 text-md focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2 hover:bg-blueGray-100"
                   >
-                    Upload a file
+                    Upload a .CSV file
                   </button>
                 </div>
               </div>
@@ -377,7 +377,7 @@
                   <Field
                     name="water bill"
                     type="number"
-                    placeholder="Watewr Bill"
+                    placeholder="Water Bill"
                     class="input input-bordered w-full max-w-xs w-full text-base text-neutral-600 transition duration-500 ease-in-out transform border border-transparent rounded-lg bg-gray-50"
                   />
                 </div>
@@ -799,7 +799,7 @@ export default {
         { value: 'DB', text: 'Dive Bar' },
         { value: 'P', text: 'Pub' },
         { value: 'UB', text: 'Underground Bar' },
-        { value: 'RB', text: 'restaurant Bar' },
+        { value: 'RB', text: 'Restaurant Bar' },
         { value: 'NCB', text: 'NightClub Bar' },
       ],
 

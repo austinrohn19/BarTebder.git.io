@@ -2,7 +2,6 @@
   <nav>
     <router-link to="/">Home </router-link> |
     <router-link v-if="loggedIn || true" to="/dashboard">Dashboard </router-link>
-    
     <router-link v-if="loggedIn || true" to="/bar">My Bar </router-link>
     <router-link v-if="loggedIn || true" to="/cabniet">My Cabniet </router-link>
     <router-link v-if="loggedIn || true" to="/recipes">My Recipes </router-link>
