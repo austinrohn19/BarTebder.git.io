@@ -52,28 +52,26 @@
                     />
                   </div>
                   <div class="barinfo text-xl text-left italic mt-5 font-bold">
-                  <h8>Company Logo</h8>
-                </div>
+                    <h8>Company Logo</h8>
+                  </div>
 
-                <div
-                  class="flex flex-col items-center justify-center py-5 text-base transition duration-500 ease-in-out transform drop-shadow-lg bg-#dbdbdb border-3 border-#6e6e6e border-dashed rounded-lg text-blueGray-500 focus:border-blue-500 focus:outline-none focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2"
-                >
-                  <p
-                    class="flex flex-wrap justify-center mb-3 text-base leading-7 text-blueGray-500"
+                  <div
+                    class="flex flex-col items-center justify-center py-5 text-base transition duration-500 ease-in-out transform drop-shadow-lg bg-#dbdbdb border-3 border-#6e6e6e border-dashed rounded-lg text-blueGray-500 focus:border-blue-500 focus:outline-none focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2"
                   >
-                    <span>Drag and drop your</span>&nbsp;<span
-                      >files anywhere or</span
+                    <p
+                      class="flex flex-wrap justify-center mb-3 text-base leading-7 text-blueGray-500"
                     >
-                  </p>
-                  <button
-                    class="w-auto px-2 py-1 my-2 mr-2 transition duration-500 ease-in-out transform border-2 border-black rounded-md text-blueGray-500 hover:text-blueGray-600 text-md focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2 hover:bg-blueGray-100"
-                  >
-                    Upload Logo
-                  </button>
+                      <span>Drag and drop your</span>&nbsp;<span
+                        >files anywhere or</span
+                      >
+                    </p>
+                    <button
+                      class="w-auto px-2 py-1 my-2 mr-2 transition duration-500 ease-in-out transform border-2 border-black rounded-md text-blueGray-500 hover:text-blueGray-600 text-md focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2 hover:bg-blueGray-100"
+                    >
+                      Upload Logo
+                    </button>
+                  </div>
                 </div>
-                </div>
-
-                
 
                 <div
                   class="Address info text-xl text-left italic mt-5 font-bold"
@@ -300,7 +298,9 @@
                   </div>
                 </div>
 
-                <div class="inventoryinfo text-xl text-left italic mt-5 font-bold">
+                <div
+                  class="inventoryinfo text-xl text-left italic mt-5 font-bold"
+                >
                   <h6>Upload Vendor Information</h6>
                 </div>
 
@@ -320,7 +320,6 @@
                     Upload a file
                   </button>
                 </div>
-
 
                 <div class="barinfo text-xl text-left italic mt-5 font-bold">
                   <h7>Upload Inventory Information</h7>
@@ -345,107 +344,107 @@
               </div>
 
               <div class="barinfo text-xl text-left italic mt-5 font-bold">
-                  <h8>Upload Photos</h8>
-                </div>
+                <h8>Upload Photos</h8>
+              </div>
 
-                <div
-                  class="flex flex-col items-center justify-center py-5 text-base transition duration-500 ease-in-out transform drop-shadow-lg bg-#dbdbdb border-3 border-#6e6e6e border-dashed rounded-lg text-blueGray-500 focus:border-blue-500 focus:outline-none focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2"
+              <div
+                class="flex flex-col items-center justify-center py-5 text-base transition duration-500 ease-in-out transform drop-shadow-lg bg-#dbdbdb border-3 border-#6e6e6e border-dashed rounded-lg text-blueGray-500 focus:border-blue-500 focus:outline-none focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2"
+              >
+                <p
+                  class="flex flex-wrap justify-center mb-3 text-base leading-7 text-blueGray-500"
                 >
-                  <p
-                    class="flex flex-wrap justify-center mb-3 text-base leading-7 text-blueGray-500"
+                  <span>Drag and drop your</span>&nbsp;<span
+                    >files anywhere or</span
                   >
-                    <span>Drag and drop your</span>&nbsp;<span
-                      >files anywhere or</span
-                    >
-                  </p>
-                  <button
-                    class="w-auto px-2 py-1 my-2 mr-2 transition duration-500 ease-in-out transform border-2 border-black rounded-md text-blueGray-500 hover:text-blueGray-600 text-md focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2 hover:bg-blueGray-100"
-                  >
-                    Upload Photos
-                  </button>
-                </div>
-
-                <div class="barinfo text-xl text-left italic mt-5 font-bold">
-                  <h8>Optional Information</h8>
-                </div>
-
-                <div class="barTypeConetainer"></div>
-                <div
-                  class="justify-center drop-shadow-lg border-solid border-2 border-black-200 rounded-lg py-8 sm:px-8 lg:px-8 grid grid-flow-row-dense grid-cols-4 grid-rows-4"
-                  style="background-color: #dbdbdb"
+                </p>
+                <button
+                  class="w-auto px-2 py-1 my-2 mr-2 transition duration-500 ease-in-out transform border-2 border-black rounded-md text-blueGray-500 hover:text-blueGray-600 text-md focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2 hover:bg-blueGray-100"
                 >
+                  Upload Photos
+                </button>
+              </div>
+
+              <div class="barinfo text-xl text-left italic mt-5 font-bold">
+                <h8>Optional Information</h8>
+              </div>
+
+              <div class="barTypeConetainer"></div>
+              <div
+                class="justify-center drop-shadow-lg border-solid border-2 border-black-200 rounded-lg py-8 sm:px-8 lg:px-8 grid grid-flow-row-dense grid-cols-4 grid-rows-4"
+                style="background-color: #dbdbdb"
+              >
                 <div class="form-group mt-1 col-span-2">
-                    <Field
-                      name="water bill"
-                      type="number"
-                      placeholder="Watewr Bill"
-                      class="input input-bordered w-full max-w-xs w-full text-base text-neutral-600 transition duration-500 ease-in-out transform border border-transparent rounded-lg bg-gray-50"
-                    />
-                  </div>
-
-                  <div class="form-group mt-1 col-span-2">
-                    <Field
-                      name="Electric Bill"
-                      type="number"
-                      placeholder="Electric Bill"
-                      class="input input-bordered w-full max-w-xs w-full text-base text-neutral-600 transition duration-500 ease-in-out transform border border-transparent rounded-lg bg-gray-50"
-                    />
-                  </div>
-
-                  <div class="form-group mt-1 col-span-2">
-                    <Field
-                      name="Wages Cost"
-                      type="number"
-                      placeholder="Wages Cost"
-                      class="input input-bordered w-full max-w-xs w-full text-base text-neutral-600 transition duration-500 ease-in-out transform border border-transparent rounded-lg bg-gray-50"
-                    />
-                  </div>
-
-                  <div class="form-group mt-1 col-span-2">
-                    <Field
-                      name="Rent/Morgage"
-                      type="number"
-                      placeholder="Rent/ Morgage"
-                      class="input input-bordered w-full max-w-xs w-full text-base text-neutral-600 transition duration-500 ease-in-out transform border border-transparent rounded-lg bg-gray-50"
-                    />
-                  </div>
-
-                  <div class="form-group mt-1 col-span-2">
-                    <Field
-                      name="FOH"
-                      type="number"
-                      placeholder="Front of House"
-                      class="input input-bordered w-full max-w-xs w-full text-base text-neutral-600 transition duration-500 ease-in-out transform border border-transparent rounded-lg bg-gray-50"
-                    />
-                  </div>
-
-                  <div class="form-group mt-1 col-span-2">
-                    <Field
-                      name="BOH"
-                      type="number"
-                      placeholder="Back of House"
-                      class="input input-bordered w-full max-w-xs w-full text-base text-neutral-600 transition duration-500 ease-in-out transform border border-transparent rounded-lg bg-gray-50"
-                    />
-                  </div>
-
-                  <div class="form-group mt-1 col-span-2">
-                    <Field
-                      name="taxes"
-                      type="number"
-                      placeholder="Taxes"
-                      class="input input-bordered w-full max-w-xs w-full text-base text-neutral-600 transition duration-500 ease-in-out transform border border-transparent rounded-lg bg-gray-50"
-                    />
-                  </div>
-
-                  <div class="form-group mt-1 col-span-2">
-                    <Field
-                      name="Misc"
-                      type="number"
-                      placeholder="Misc"
-                      class="input input-bordered w-full max-w-xs w-full text-base text-neutral-600 transition duration-500 ease-in-out transform border border-transparent rounded-lg bg-gray-50"
-                    />
-                  </div>
+                  <Field
+                    name="water bill"
+                    type="number"
+                    placeholder="Watewr Bill"
+                    class="input input-bordered w-full max-w-xs w-full text-base text-neutral-600 transition duration-500 ease-in-out transform border border-transparent rounded-lg bg-gray-50"
+                  />
                 </div>
+
+                <div class="form-group mt-1 col-span-2">
+                  <Field
+                    name="Electric Bill"
+                    type="number"
+                    placeholder="Electric Bill"
+                    class="input input-bordered w-full max-w-xs w-full text-base text-neutral-600 transition duration-500 ease-in-out transform border border-transparent rounded-lg bg-gray-50"
+                  />
+                </div>
+
+                <div class="form-group mt-1 col-span-2">
+                  <Field
+                    name="Wages Cost"
+                    type="number"
+                    placeholder="Wages Cost"
+                    class="input input-bordered w-full max-w-xs w-full text-base text-neutral-600 transition duration-500 ease-in-out transform border border-transparent rounded-lg bg-gray-50"
+                  />
+                </div>
+
+                <div class="form-group mt-1 col-span-2">
+                  <Field
+                    name="Rent/Morgage"
+                    type="number"
+                    placeholder="Rent/ Morgage"
+                    class="input input-bordered w-full max-w-xs w-full text-base text-neutral-600 transition duration-500 ease-in-out transform border border-transparent rounded-lg bg-gray-50"
+                  />
+                </div>
+
+                <div class="form-group mt-1 col-span-2">
+                  <Field
+                    name="FOH"
+                    type="number"
+                    placeholder="Front of House"
+                    class="input input-bordered w-full max-w-xs w-full text-base text-neutral-600 transition duration-500 ease-in-out transform border border-transparent rounded-lg bg-gray-50"
+                  />
+                </div>
+
+                <div class="form-group mt-1 col-span-2">
+                  <Field
+                    name="BOH"
+                    type="number"
+                    placeholder="Back of House"
+                    class="input input-bordered w-full max-w-xs w-full text-base text-neutral-600 transition duration-500 ease-in-out transform border border-transparent rounded-lg bg-gray-50"
+                  />
+                </div>
+
+                <div class="form-group mt-1 col-span-2">
+                  <Field
+                    name="taxes"
+                    type="number"
+                    placeholder="Taxes"
+                    class="input input-bordered w-full max-w-xs w-full text-base text-neutral-600 transition duration-500 ease-in-out transform border border-transparent rounded-lg bg-gray-50"
+                  />
+                </div>
+
+                <div class="form-group mt-1 col-span-2">
+                  <Field
+                    name="Misc"
+                    type="number"
+                    placeholder="Misc"
+                    class="input input-bordered w-full max-w-xs w-full text-base text-neutral-600 transition duration-500 ease-in-out transform border border-transparent rounded-lg bg-gray-50"
+                  />
+                </div>
+              </div>
 
               <div class="form-group mt-5">
                 <button
@@ -801,6 +800,7 @@ export default {
         { value: 'P', text: 'Pub' },
         { value: 'UB', text: 'Underground Bar' },
         { value: 'RB', text: 'restaurant Bar' },
+        { value: 'NCB', text: 'NightClub Bar' },
       ],
 
       //POS System Brands for POS intergartion choices
