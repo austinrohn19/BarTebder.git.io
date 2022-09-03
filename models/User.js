@@ -38,54 +38,55 @@ User.init(
             }
         },
         //address information data tpyes
-        name:{
-           type: DataTypes.STRING,
-           allowNull: false,
-           required: true,
-        },
-        companyName:{
+        name: {
             type: DataTypes.STRING,
             allowNull: false,
-            required: true, 
-        },
-        street:{
-            type: DataTypes.STRING, 
-            allowNull: false,
-            required: true, 
-        },
-        city:{
-            type: DataTypes.STRING,
-            allowNull: false, 
             required: true,
         },
-        state:{
+        companyName: {
             type: DataTypes.STRING,
             allowNull: false,
-            required: true,      
-        },
-        zipCode:{
-            type: DataTypes.STRING, 
-            allowNull: false, 
             required: true,
         },
-        country:{
+        street: {
             type: DataTypes.STRING,
             allowNull: false,
-            required: true, 
+            required: true,
+        },
+        city: {
+            type: DataTypes.STRING,
+            allowNull: false,
+            required: true,
+        },
+        state: {
+            type: DataTypes.STRING,
+            allowNull: false,
+            required: true,
+        },
+        zipCode: {
+            type: DataTypes.STRING,
+            allowNull: false,
+            required: true,
+        },
+        country: {
+            type: DataTypes.STRING,
+            allowNull: false,
+            required: true,
         },
         //contact information data tpyes
         name: {
-            type: DataTypes.STRING, 
+            type: DataTypes.STRING,
             allowNull: false,
             required: true,
         },
         email: {
             type: DataTypes.STRING,
-            allowNull: false, 
-            required: [true,'Please enter your Email address'],
-            validate:{ 
-                isEmail: true}
-            
+            allowNull: false,
+            required: [true, 'Please enter your Email address'],
+            validate: {
+                isEmail: true
+            }
+
         },
         number: {
             type: DataTypes.STRING,
@@ -94,15 +95,15 @@ User.init(
         },
         //Bar Information Data tpyes
         barTypes: {
-            type: DataTypes.STRING, 
+            type: DataTypes.STRING,
             allowNull: false,
             required: true,
         },
-        LED:{
+        LED: {
             type: DataTypes.BOOLEAN,
             allowNull: false,
         },
-        Key:{
+        Key: {
             type: DataTypes.STRING,
             allowNull: false,
         },
@@ -123,23 +124,23 @@ User.init(
             allowNull: false,
         },
     })
-        hooks: {
+hooks: {
             // set up beforeCreate lifecycle "hook" functionality
             async beforeCreate(newUserData) {
-                newUserData.password = await bcrypt.hash(newUserData.password, 10);
-                return newUserData;
-            },
+        newUserData.password = await bcrypt.hash(newUserData.password, 10);
+        return newUserData;
+    },
 
             async beforeUpdate(updatedUserData) {
-                updatedUserData.password = await bcrypt.hash(updatedUserData.password, 10);
-                return updatedUserData;
-            }
-        },
-        sequelize,
-        timestamps: false,
+        updatedUserData.password = await bcrypt.hash(updatedUserData.password, 10);
+        return updatedUserData;
+    }
+},
+sequelize,
+    timestamps: false,
         freezeTableName: true,
-        underscored: true,
-        modelName: 'User'
+            underscored: true,
+                modelName: 'User'
     }
 );
 

@@ -3,26 +3,57 @@
     <div
       class="flex flex-col justify-center min- py-5 sm:px-6 lg:px-12 max-width"
     >
-      <div class="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
-        <div class="px-4 py-8 sm:px-10">
+      <div>
+        <div class="">
           <a
             type="submit"
-            class="btn flex items-center justify-center w-full text-base font-medium text-center text-white transition ease-in-out transform rounded-xl"
+            class="
+              btn
+              flex
+              items-center
+              justify-center
+              w-full
+              text-base
+              font-medium
+              text-center text-white
+              transition
+              ease-in-out
+              transform
+              rounded-xl
+            "
             href="register"
           >
             Bar-Tender Registration
           </a>
           <h1
-            class="flex items-center justify-center w-full text-base font-medium text-center text-white transition ease-in-out transform rounded-xl"
+            class="
+              flex
+              items-center
+              justify-center
+              w-full
+              text-base
+              font-medium
+              text-center text-white
+              transition
+              ease-in-out
+              transform
+              rounded-xl
+            "
           ></h1>
           <Form @submit="handleRegister">
-            <div v-if="!successful">
-              <div class="login text-xl text-left italic mt-5 font-bold">
-                <h2>Login Information</h2>
-              </div>
-              <div class="username-container">
+            <div class="grid grid-cols-2 gap-4">
+              <div id="username-container">
                 <div
-                  class="flex flex-col justify-center drop-shadow-lg border-solid border-2 border-black-200 rounded-lg py-8 sm:px-8 lg:px-8"
+                  class="
+                    flex flex-col
+                    justify-center
+                    drop-shadow-lg
+                    border-solid border-2 border-black-200
+                    rounded-lg
+                    py-8
+                    sm:px-8
+                    lg:px-8
+                  "
                   style="background-color: #dbdbdb"
                 >
                   <div class="form-group mt-1">
@@ -30,7 +61,20 @@
                       name="username"
                       type="text"
                       placeholder="Username"
-                      class="input input-bordered w-full max-w-xs w-full text-base text-neutral-600 transition duration-500 ease-in-out transform border border-transparent rounded-lg bg-gray-50"
+                      class="
+                        input input-bordered
+                        w-full
+                        max-w-xs
+                        w-full
+                        text-base text-neutral-600
+                        transition
+                        duration-500
+                        ease-in-out
+                        transform
+                        border border-transparent
+                        rounded-lg
+                        bg-gray-50
+                      "
                     />
                   </div>
 
@@ -39,7 +83,20 @@
                       name="password"
                       type="password"
                       placeholder="Password"
-                      class="input input-bordered w-full max-w-xs w-full text-base text-neutral-600 transition duration-500 ease-in-out transform border border-transparent rounded-lg bg-gray-50"
+                      class="
+                        input input-bordered
+                        w-full
+                        max-w-xs
+                        w-full
+                        text-base text-neutral-600
+                        transition
+                        duration-500
+                        ease-in-out
+                        transform
+                        border border-transparent
+                        rounded-lg
+                        bg-gray-50
+                      "
                     />
                   </div>
 
@@ -48,7 +105,20 @@
                       name="confirmPassword"
                       type="password"
                       placeholder="Confirm Password"
-                      class="input input-bordered w-full max-w-xs w-full text-base text-neutral-600 transition duration-500 ease-in-out transform border border-transparent rounded-lg bg-gray-50"
+                      class="
+                        input input-bordered
+                        w-full
+                        max-w-xs
+                        w-full
+                        text-base text-neutral-600
+                        transition
+                        duration-500
+                        ease-in-out
+                        transform
+                        border border-transparent
+                        rounded-lg
+                        bg-gray-50
+                      "
                     />
                   </div>
                   <div class="barinfo text-xl text-left italic mt-5 font-bold">
@@ -56,124 +126,272 @@
                   </div>
 
                   <div
-                    class="flex flex-col items-center justify-center py-5 text-base transition duration-500 ease-in-out transform drop-shadow-lg bg-#dbdbdb border-3 border-#6e6e6e border-dashed rounded-lg text-blueGray-500 focus:border-blue-500 focus:outline-none focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2"
+                    class="
+                      flex flex-col
+                      items-center
+                      justify-center
+                      py-5
+                      text-base
+                      transition
+                      duration-500
+                      ease-in-out
+                      transform
+                      drop-shadow-lg
+                      bg-#dbdbdb
+                      border-3 border-#6e6e6e border-dashed
+                      rounded-lg
+                      text-blueGray-500
+                      focus:border-blue-500
+                      focus:outline-none
+                      focus:shadow-outline
+                      focus:ring-2
+                      ring-offset-current ring-offset-2
+                    "
                   >
                     <p
-                      class="flex flex-wrap justify-center mb-3 text-base leading-7 text-blueGray-500"
+                      class="
+                        flex flex-wrap
+                        justify-center
+                        mb-3
+                        text-base
+                        leading-7
+                        text-blueGray-500
+                      "
                     >
                       <span>Drag and drop your</span>&nbsp;<span
                         >files anywhere or</span
                       >
                     </p>
                     <button
-                      class="w-auto px-2 py-1 my-2 mr-2 transition duration-500 ease-in-out transform border-2 border-black rounded-md text-blueGray-500 hover:text-blueGray-600 text-md focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2 hover:bg-blueGray-100"
+                      class="
+                        w-auto
+                        px-2
+                        py-1
+                        my-2
+                        mr-2
+                        transition
+                        duration-500
+                        ease-in-out
+                        transform
+                        border-2 border-black
+                        rounded-md
+                        text-blueGray-500
+                        hover:text-blueGray-600
+                        text-md
+                        focus:shadow-outline focus:outline-none focus:ring-2
+                        ring-offset-current ring-offset-2
+                        hover:bg-blueGray-100
+                      "
                     >
                       Upload Logo
                     </button>
                   </div>
                 </div>
-
+              </div>
+              <div id="addressContainer">
                 <div
-                  class="Address info text-xl text-left italic mt-5 font-bold"
+                  class="
+                    justify-center
+                    drop-shadow-lg
+                    border-solid border-2 border-black-200
+                    rounded-lg
+                    py-8
+                    sm:px-8
+                    lg:px-8
+                    grid grid-flow-row-dense grid-cols-3 grid-rows-5
+                  "
+                  style="background-color: #dbdbdb"
                 >
-                  <h3>Address</h3>
-                </div>
+                  <div class="form-group mt-1 col-span-3">
+                    <Field
+                      name="Name"
+                      type="text"
+                      placeholder="Name"
+                      class="
+                        input input-bordered
+                        w-full
+                        max-w-xs
+                        w-full
+                        text-base text-neutral-600
+                        transition
+                        duration-500
+                        ease-in-out
+                        transform
+                        border border-transparent
+                        rounded-lg
+                        bg-gray-50
+                      "
+                    />
+                  </div>
 
-                <div class="addressContainer">
-                  <div
-                    class="justify-center drop-shadow-lg border-solid border-2 border-black-200 rounded-lg py-8 sm:px-8 lg:px-8 grid grid-flow-row-dense grid-cols-3 grid-rows-5"
-                    style="background-color: #dbdbdb"
-                  >
-                    <div class="form-group mt-1 col-span-3">
-                      <Field
-                        name="name"
-                        type="text"
-                        placeholder="Name"
-                        class="input input-bordered w-full max-w-xs w-full text-base text-neutral-600 transition duration-500 ease-in-out transform border border-transparent rounded-lg bg-gray-50"
-                      />
-                    </div>
+                  <div class="form-group mt-1 col-span-3">
+                    <Field
+                      name="companyName"
+                      type="text"
+                      placeholder="Company Name"
+                      class="
+                        input input-bordered
+                        w-full
+                        max-w-xs
+                        w-full
+                        text-base text-neutral-600
+                        transition
+                        duration-500
+                        ease-in-out
+                        transform
+                        border border-transparent
+                        rounded-lg
+                        bg-gray-50
+                      "
+                    />
+                  </div>
 
-                    <div class="form-group mt-1 col-span-3">
-                      <Field
-                        name="companyName"
-                        type="text"
-                        placeholder="Company Name"
-                        class="input input-bordered w-full max-w-xs w-full text-base text-neutral-600 transition duration-500 ease-in-out transform border border-transparent rounded-lg bg-gray-50"
-                      />
-                    </div>
+                  <div class="form-group mt-1 col-span-3">
+                    <Field
+                      name="street"
+                      type="text"
+                      placeholder="Street"
+                      class="
+                        input input-bordered
+                        w-full
+                        max-w-xs
+                        w-full
+                        text-base text-neutral-600
+                        transition
+                        duration-500
+                        ease-in-out
+                        transform
+                        border border-transparent
+                        rounded-lg
+                        bg-gray-50
+                      "
+                    />
+                  </div>
 
-                    <div class="form-group mt-1 col-span-3">
-                      <Field
-                        name="street"
-                        type="text"
-                        placeholder="Street"
-                        class="input input-bordered w-full max-w-xs w-full text-base text-neutral-600 transition duration-500 ease-in-out transform border border-transparent rounded-lg bg-gray-50"
-                      />
-                    </div>
+                  <div class="form-group mt-1 mr-1">
+                    <Field
+                      name="city"
+                      type="text"
+                      placeholder="City"
+                      class="
+                        input input-bordered
+                        w-full
+                        max-w-xs
+                        w-full
+                        text-base text-neutral-600
+                        transition
+                        duration-500
+                        ease-in-out
+                        transform
+                        border border-transparent
+                        rounded-lg
+                        bg-gray-50
+                      "
+                    />
+                  </div>
 
-                    <div class="form-group mt-1 mr-1">
-                      <Field
-                        name="city"
-                        type="text"
-                        placeholder="City"
-                        class="input input-bordered w-full max-w-xs w-full text-base text-neutral-600 transition duration-500 ease-in-out transform border border-transparent rounded-lg bg-gray-50"
-                      />
-                    </div>
-
-                    <div class="form-group mt-1 mr-1">
-                      <select
-                        name="state"
-                        id="state"
-                        placeholder="State"
-                        class="input input-bordered w-full max-w-xs w-full text-base text-neutral-600 transition duration-500 ease-in-out transform border border-transparent rounded-lg bg-gray-50"
+                  <div class="form-group mt-1 mr-1">
+                    <select
+                      name="state"
+                      id="state"
+                      placeholder="State"
+                      class="
+                        input input-bordered
+                        w-full
+                        max-w-xs
+                        w-full
+                        text-base text-neutral-600
+                        transition
+                        duration-500
+                        ease-in-out
+                        transform
+                        border border-transparent
+                        rounded-lg
+                        bg-gray-50
+                      "
+                    >
+                      <option value="select state">Select State</option>
+                      <option
+                        v-for="item in states"
+                        :key="item"
+                        :value="item.value"
                       >
-                        <option value="select state">Select State</option>
-                        <option
-                          v-for="item in states"
-                          :key="item"
-                          :value="item.value"
-                        >
-                          {{ item.text }}
-                        </option>
-                      </select>
-                    </div>
+                        {{ item.text }}
+                      </option>
+                    </select>
+                  </div>
 
-                    <div class="form-group mt-1">
-                      <Field
-                        name="zipCode"
-                        type="number"
-                        placeholder="Zip Code"
-                        class="input input-bordered w-full max-w-xs w-full text-base text-neutral-600 transition duration-500 ease-in-out transform border border-transparent rounded-lg bg-gray-50"
-                      />
-                    </div>
+                  <div class="form-group mt-1">
+                    <Field
+                      name="zipCode"
+                      type="number"
+                      placeholder="Zip Code"
+                      class="
+                        input input-bordered
+                        w-full
+                        max-w-xs
+                        w-full
+                        text-base text-neutral-600
+                        transition
+                        duration-500
+                        ease-in-out
+                        transform
+                        border border-transparent
+                        rounded-lg
+                        bg-gray-50
+                      "
+                    />
+                  </div>
 
-                    <div class="form-group mt-1 col-span-3">
-                      <select
-                        name="country"
-                        id="country"
-                        placeholder="Country"
-                        class="input input-bordered w-full max-w-xs w-full text-base text-neutral-600 transition duration-500 ease-in-out transform border border-transparent rounded-lg bg-gray-50"
+                  <div class="form-group mt-1 col-span-3">
+                    <select
+                      name="country"
+                      id="country"
+                      placeholder="Country"
+                      class="
+                        input input-bordered
+                        w-full
+                        max-w-xs
+                        w-full
+                        text-base text-neutral-600
+                        transition
+                        duration-500
+                        ease-in-out
+                        transform
+                        border border-transparent
+                        rounded-lg
+                        bg-gray-50
+                      "
+                    >
+                      <option value="select country">select Country</option>
+                      <option
+                        v-for="item in countries"
+                        :key="item"
+                        :value="item.value"
                       >
-                        <option value="select country">Select Country</option>
-                        <option
-                          v-for="item in countries"
-                          :key="item"
-                          :value="item.value"
-                        >
-                          {{ item.text }}
-                        </option>
-                      </select>
-                    </div>
+                        {{ item.text }}
+                      </option>
+                    </select>
                   </div>
                 </div>
-
+              </div>
+              <div id="contactInformationContainer">
                 <div class="Contact text-xl text-left italic mt-5 font-bold">
                   <h4>Contact Information</h4>
                 </div>
 
-                <div class="contactInformationContainer">
+                <div>
                   <div
-                    class="flex flex-col justify-center drop-shadow-lg border-solid border-2 border-black-200 rounded-lg py-8 sm:px-8 lg:px-8"
+                    class="
+                      flex flex-col
+                      justify-center
+                      drop-shadow-lg
+                      border-solid border-2 border-black-200
+                      rounded-lg
+                      py-8
+                      sm:px-8
+                      lg:px-8
+                    "
                     style="background-color: #dbdbdb"
                   >
                     <div class="form-group mt-1">
@@ -181,7 +399,20 @@
                         name="Name"
                         type="text"
                         placeholder="Full Name"
-                        class="input input-bordered w-full max-w-xs w-full text-base text-neutral-600 transition duration-500 ease-in-out transform border border-transparent rounded-lg bg-gray-50"
+                        class="
+                          input input-bordered
+                          w-full
+                          max-w-xs
+                          w-full
+                          text-base text-neutral-600
+                          transition
+                          duration-500
+                          ease-in-out
+                          transform
+                          border border-transparent
+                          rounded-lg
+                          bg-gray-50
+                        "
                       />
                     </div>
                     <div class="form-group mt-1">
@@ -189,7 +420,20 @@
                         name="email"
                         type="email"
                         placeholder="Email"
-                        class="input input-bordered w-full max-w-xs w-full text-base text-neutral-600 transition duration-500 ease-in-out transform border border-transparent rounded-lg bg-gray-50"
+                        class="
+                          input input-bordered
+                          w-full
+                          max-w-xs
+                          w-full
+                          text-base text-neutral-600
+                          transition
+                          duration-500
+                          ease-in-out
+                          transform
+                          border border-transparent
+                          rounded-lg
+                          bg-gray-50
+                        "
                       />
                     </div>
 
@@ -198,19 +442,41 @@
                         name="number"
                         type="number"
                         placeholder="Phone Number"
-                        class="input input-bordered w-full max-w-xs w-full text-base text-neutral-600 transition duration-500 ease-in-out transform border border-transparent rounded-lg bg-gray-50"
+                        class="
+                          input input-bordered
+                          w-full
+                          max-w-xs
+                          w-full
+                          text-base text-neutral-600
+                          transition
+                          duration-500
+                          ease-in-out
+                          transform
+                          border border-transparent
+                          rounded-lg
+                          bg-gray-50
+                        "
                       />
                     </div>
                   </div>
                 </div>
-
+              </div>
+              <div id="barInformation">
                 <div class="barinfo text-xl text-left italic mt-5 font-bold">
                   <h5>Bar Information</h5>
                 </div>
 
-                <div class="barTypeConetainer"></div>
                 <div
-                  class="justify-center drop-shadow-lg border-solid border-2 border-black-200 rounded-lg py-8 sm:px-8 lg:px-8 grid grid-flow-row-dense grid-cols-4 grid-rows-4"
+                  class="
+                    justify-center
+                    drop-shadow-lg
+                    border-solid border-2 border-black-200
+                    rounded-lg
+                    py-8
+                    sm:px-8
+                    lg:px-8
+                    grid grid-flow-row-dense grid-cols-4 grid-rows-4
+                  "
                   style="background-color: #dbdbdb"
                 >
                   <div class="form-group mt-1 col-span-4">
@@ -218,7 +484,20 @@
                       name="barType"
                       id="barType"
                       placeholder="Type of Bar"
-                      class="input input-bordered w-full max-w-xs w-full text-base text-neutral-600 transition duration-500 ease-in-out transform border border-transparent rounded-lg bg-gray-50"
+                      class="
+                        input input-bordered
+                        w-full
+                        max-w-xs
+                        w-full
+                        text-base text-neutral-600
+                        transition
+                        duration-500
+                        ease-in-out
+                        transform
+                        border border-transparent
+                        rounded-lg
+                        bg-gray-50
+                      "
                     >
                       <option>Select Bar Type</option>
                       <option
@@ -235,7 +514,7 @@
                     <input
                       type="checkbox"
                       id="LED lights"
-                      name="LED"
+                      name="LED Lights"
                       value="Unlock Key"
                     />
                     <label for="LED Lights"> LED Lights</label>
@@ -246,7 +525,20 @@
                       name="Key"
                       type="text"
                       placeholder="Key (font Awesome Key?)"
-                      class="input input-bordered w-full max-w-xs w-full text-base text-neutral-600 transition duration-500 ease-in-out transform border border-transparent rounded-lg bg-gray-50"
+                      class="
+                        input input-bordered
+                        w-full
+                        max-w-xs
+                        w-full
+                        text-base text-neutral-600
+                        transition
+                        duration-500
+                        ease-in-out
+                        transform
+                        border border-transparent
+                        rounded-lg
+                        bg-gray-50
+                      "
                     />
                   </div>
 
@@ -262,10 +554,23 @@
 
                   <div class="form-group mt-1 col-span-2">
                     <select
-                      name="POSBrand"
-                      id="POSBrand"
+                      name="POS"
+                      id="POS"
                       placeholder="POS Brand Registration"
-                      class="input input-bordered w-full max-w-xs w-full text-base text-neutral-600 transition duration-500 ease-in-out transform border border-transparent rounded-lg bg-gray-50"
+                      class="
+                        input input-bordered
+                        w-full
+                        max-w-xs
+                        w-full
+                        text-base text-neutral-600
+                        transition
+                        duration-500
+                        ease-in-out
+                        transform
+                        border border-transparent
+                        rounded-lg
+                        bg-gray-50
+                      "
                     >
                       <option>POS Brand</option>
                       <option
@@ -290,14 +595,161 @@
 
                   <div class="form-group mt-1 col-span-2">
                     <Field
-                      name="VenderIntergration"
+                      name="Vender Intergration"
                       type="Text"
                       placeholder="Key"
-                      class="input input-bordered w-full max-w-xs w-full text-base text-neutral-600 transition duration-500 ease-in-out transform border border-transparent rounded-lg bg-gray-50"
+                      class="
+                        input input-bordered
+                        w-full
+                        max-w-xs
+                        w-full
+                        text-base text-neutral-600
+                        transition
+                        duration-500
+                        ease-in-out
+                        transform
+                        border border-transparent
+                        rounded-lg
+                        bg-gray-50
+                      "
                     />
                   </div>
                 </div>
+              </div>
+              <div id="uploadInvInformation">
+                <div class="barinfo text-xl text-left italic mt-5 font-bold">
+                  <h7>Upload Inventory Information</h7>
+                </div>
 
+                <div
+                  class="
+                    flex flex-col
+                    items-center
+                    justify-center
+                    py-5
+                    text-base
+                    transition
+                    duration-500
+                    ease-in-out
+                    transform
+                    drop-shadow-lg
+                    bg-#dbdbdb
+                    border-3 border-#6e6e6e border-dashed
+                    rounded-lg
+                    text-blueGray-500
+                    focus:border-blue-500
+                    focus:outline-none
+                    focus:shadow-outline
+                    focus:ring-2
+                    ring-offset-current ring-offset-2
+                  "
+                >
+                  <p
+                    class="
+                      flex flex-wrap
+                      justify-center
+                      mb-3
+                      text-base
+                      leading-7
+                      text-blueGray-500
+                    "
+                  >
+                    <span>Drag and drop your</span>&nbsp;<span
+                      >files anywhere or</span
+                    >
+                  </p>
+                  <button
+                    class="
+                      w-auto
+                      px-2
+                      py-1
+                      my-2
+                      mr-2
+                      transition
+                      duration-500
+                      ease-in-out
+                      transform
+                      border-2 border-black
+                      rounded-md
+                      text-blueGray-500
+                      hover:text-blueGray-600
+                      text-md
+                      focus:shadow-outline focus:outline-none focus:ring-2
+                      ring-offset-current ring-offset-2
+                      hover:bg-blueGray-100
+                    "
+                  >
+                    Upload a file
+                  </button>
+                </div>
+              </div>
+              <div id="photoUpload">
+                <div class="barinfo text-xl text-left italic mt-5 font-bold">
+                  <h8>Upload Photos</h8>
+                </div>
+                <div
+                  class="
+                    flex flex-col
+                    items-center
+                    justify-center
+                    py-5
+                    text-base
+                    transition
+                    duration-500
+                    ease-in-out
+                    transform
+                    drop-shadow-lg
+                    bg-#dbdbdb
+                    border-3 border-#6e6e6e border-dashed
+                    rounded-lg
+                    text-blueGray-500
+                    focus:border-blue-500
+                    focus:outline-none
+                    focus:shadow-outline
+                    focus:ring-2
+                    ring-offset-current ring-offset-2
+                  "
+                >
+                  <p
+                    class="
+                      flex flex-wrap
+                      justify-center
+                      mb-3
+                      text-base
+                      leading-7
+                      text-blueGray-500
+                    "
+                  >
+                    <span>Drag and drop your</span>&nbsp;<span
+                      >files anywhere or</span
+                    >
+                  </p>
+                  <button
+                    class="
+                      w-auto
+                      px-2
+                      py-1
+                      my-2
+                      mr-2
+                      transition
+                      duration-500
+                      ease-in-out
+                      transform
+                      border-2 border-black
+                      rounded-md
+                      text-blueGray-500
+                      hover:text-blueGray-600
+                      text-md
+                      focus:shadow-outline focus:outline-none focus:ring-2
+                      ring-offset-current ring-offset-2
+                      hover:bg-blueGray-100
+                    "
+                  >
+                    Upload Photos
+                  </button>
+                </div>
+              </div>
+              <div id="venderInfoUpload">
                 <div
                   class="inventoryinfo text-xl text-left italic mt-5 font-bold"
                 >
@@ -305,150 +757,270 @@
                 </div>
 
                 <div
-                  class="flex flex-col items-center justify-center py-5 text-base transition duration-500 ease-in-out transform drop-shadow-lg bg-#dbdbdb border-3 border-#6e6e6e border-dashed rounded-lg text-blueGray-500 focus:border-blue-500 focus:outline-none focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2"
+                  class="
+                    flex flex-col
+                    items-center
+                    justify-center
+                    py-5
+                    text-base
+                    transition
+                    duration-500
+                    ease-in-out
+                    transform
+                    drop-shadow-lg
+                    bg-#dbdbdb
+                    border-3 border-#6e6e6e border-dashed
+                    rounded-lg
+                    text-blueGray-500
+                    focus:border-blue-500
+                    focus:outline-none
+                    focus:shadow-outline
+                    focus:ring-2
+                    ring-offset-current ring-offset-2
+                  "
                 >
                   <p
-                    class="flex flex-wrap justify-center mb-3 text-base leading-7 text-blueGray-500"
+                    class="
+                      flex flex-wrap
+                      justify-center
+                      mb-3
+                      text-base
+                      leading-7
+                      text-blueGray-500
+                    "
                   >
                     <span>Drag and drop your</span>&nbsp;<span
                       >files anywhere or</span
                     >
                   </p>
                   <button
-                    class="w-auto px-2 py-1 my-2 mr-2 transition duration-500 ease-in-out transform border-2 border-black rounded-md text-blueGray-500 hover:text-blueGray-600 text-md focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2 hover:bg-blueGray-100"
+                    class="
+                      w-auto
+                      px-2
+                      py-1
+                      my-2
+                      mr-2
+                      transition
+                      duration-500
+                      ease-in-out
+                      transform
+                      border-2 border-black
+                      rounded-md
+                      text-blueGray-500
+                      hover:text-blueGray-600
+                      text-md
+                      focus:shadow-outline focus:outline-none focus:ring-2
+                      ring-offset-current ring-offset-2
+                      hover:bg-blueGray-100
+                    "
                   >
-                    Upload a .CSV file
+                    Upload a file
                   </button>
                 </div>
-
+              </div>
+              <div id="optionalInfo">
                 <div class="barinfo text-xl text-left italic mt-5 font-bold">
-                  <h7>Upload Inventory Information</h7>
+                  <h8>Optional Information</h8>
                 </div>
-
                 <div
-                  class="flex flex-col items-center justify-center py-5 text-base transition duration-500 ease-in-out transform drop-shadow-lg bg-#dbdbdb border-3 border-#6e6e6e border-dashed rounded-lg text-blueGray-500 focus:border-blue-500 focus:outline-none focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2"
+                  class="
+                    justify-center
+                    drop-shadow-lg
+                    border-solid border-2 border-black-200
+                    rounded-lg
+                    py-8
+                    sm:px-8
+                    lg:px-8
+                    grid grid-flow-row-dense grid-cols-4 grid-rows-4
+                  "
+                  style="background-color: #dbdbdb"
                 >
-                  <p
-                    class="flex flex-wrap justify-center mb-3 text-base leading-7 text-blueGray-500"
-                  >
-                    <span>Drag and drop your</span>&nbsp;<span
-                      >files anywhere or</span
-                    >
-                  </p>
-                  <button
-                    class="w-auto px-2 py-1 my-2 mr-2 transition duration-500 ease-in-out transform border-2 border-black rounded-md text-blueGray-500 hover:text-blueGray-600 text-md focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2 hover:bg-blueGray-100"
-                  >
-                    Upload a .CSV file
-                  </button>
-                </div>
-              </div>
+                  <div class="form-group mt-1 col-span-2">
+                    <Field
+                      name="water bill"
+                      type="number"
+                      placeholder="Watewr Bill"
+                      class="
+                        input input-bordered
+                        w-full
+                        max-w-xs
+                        w-full
+                        text-base text-neutral-600
+                        transition
+                        duration-500
+                        ease-in-out
+                        transform
+                        border border-transparent
+                        rounded-lg
+                        bg-gray-50
+                      "
+                    />
+                  </div>
 
-              <div class="barinfo text-xl text-left italic mt-5 font-bold">
-                <h8>Upload Photos</h8>
-              </div>
+                  <div class="form-group mt-1 col-span-2">
+                    <Field
+                      name="Electric Bill"
+                      type="number"
+                      placeholder="Electric Bill"
+                      class="
+                        input input-bordered
+                        w-full
+                        max-w-xs
+                        w-full
+                        text-base text-neutral-600
+                        transition
+                        duration-500
+                        ease-in-out
+                        transform
+                        border border-transparent
+                        rounded-lg
+                        bg-gray-50
+                      "
+                    />
+                  </div>
 
-              <div
-                class="flex flex-col items-center justify-center py-5 text-base transition duration-500 ease-in-out transform drop-shadow-lg bg-#dbdbdb border-3 border-#6e6e6e border-dashed rounded-lg text-blueGray-500 focus:border-blue-500 focus:outline-none focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2"
-              >
-                <p
-                  class="flex flex-wrap justify-center mb-3 text-base leading-7 text-blueGray-500"
-                >
-                  <span>Drag and drop your</span>&nbsp;<span
-                    >files anywhere or</span
-                  >
-                </p>
-                <button
-                  class="w-auto px-2 py-1 my-2 mr-2 transition duration-500 ease-in-out transform border-2 border-black rounded-md text-blueGray-500 hover:text-blueGray-600 text-md focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2 hover:bg-blueGray-100"
-                >
-                  Upload Photos
-                </button>
-              </div>
+                  <div class="form-group mt-1 col-span-2">
+                    <Field
+                      name="Wages Cost"
+                      type="number"
+                      placeholder="Wages Cost"
+                      class="
+                        input input-bordered
+                        w-full
+                        max-w-xs
+                        w-full
+                        text-base text-neutral-600
+                        transition
+                        duration-500
+                        ease-in-out
+                        transform
+                        border border-transparent
+                        rounded-lg
+                        bg-gray-50
+                      "
+                    />
+                  </div>
 
-              <div class="barinfo text-xl text-left italic mt-5 font-bold">
-                <h8>Optional Information</h8>
-              </div>
+                  <div class="form-group mt-1 col-span-2">
+                    <Field
+                      name="Rent/Morgage"
+                      type="number"
+                      placeholder="Rent/ Morgage"
+                      class="
+                        input input-bordered
+                        w-full
+                        max-w-xs
+                        w-full
+                        text-base text-neutral-600
+                        transition
+                        duration-500
+                        ease-in-out
+                        transform
+                        border border-transparent
+                        rounded-lg
+                        bg-gray-50
+                      "
+                    />
+                  </div>
 
-              <div class="barTypeConetainer"></div>
-              <div
-                class="justify-center drop-shadow-lg border-solid border-2 border-black-200 rounded-lg py-8 sm:px-8 lg:px-8 grid grid-flow-row-dense grid-cols-4 grid-rows-4"
-                style="background-color: #dbdbdb"
-              >
-                <div class="form-group mt-1 col-span-2">
-                  <Field
-                    name="water bill"
-                    type="number"
-                    placeholder="Water Bill"
-                    class="input input-bordered w-full max-w-xs w-full text-base text-neutral-600 transition duration-500 ease-in-out transform border border-transparent rounded-lg bg-gray-50"
-                  />
-                </div>
+                  <div class="form-group mt-1 col-span-2">
+                    <Field
+                      name="FOH"
+                      type="number"
+                      placeholder="Front of House"
+                      class="
+                        input input-bordered
+                        w-full
+                        max-w-xs
+                        w-full
+                        text-base text-neutral-600
+                        transition
+                        duration-500
+                        ease-in-out
+                        transform
+                        border border-transparent
+                        rounded-lg
+                        bg-gray-50
+                      "
+                    />
+                  </div>
 
-                <div class="form-group mt-1 col-span-2">
-                  <Field
-                    name="Electric Bill"
-                    type="number"
-                    placeholder="Electric Bill"
-                    class="input input-bordered w-full max-w-xs w-full text-base text-neutral-600 transition duration-500 ease-in-out transform border border-transparent rounded-lg bg-gray-50"
-                  />
-                </div>
+                  <div class="form-group mt-1 col-span-2">
+                    <Field
+                      name="BOH"
+                      type="number"
+                      placeholder="Back of House"
+                      class="
+                        input input-bordered
+                        w-full
+                        max-w-xs
+                        w-full
+                        text-base text-neutral-600
+                        transition
+                        duration-500
+                        ease-in-out
+                        transform
+                        border border-transparent
+                        rounded-lg
+                        bg-gray-50
+                      "
+                    />
+                  </div>
 
-                <div class="form-group mt-1 col-span-2">
-                  <Field
-                    name="Wages Cost"
-                    type="number"
-                    placeholder="Wages Cost"
-                    class="input input-bordered w-full max-w-xs w-full text-base text-neutral-600 transition duration-500 ease-in-out transform border border-transparent rounded-lg bg-gray-50"
-                  />
-                </div>
+                  <div class="form-group mt-1 col-span-2">
+                    <Field
+                      name="taxes"
+                      type="number"
+                      placeholder="Taxes"
+                      class="
+                        input input-bordered
+                        w-full
+                        max-w-xs
+                        w-full
+                        text-base text-neutral-600
+                        transition
+                        duration-500
+                        ease-in-out
+                        transform
+                        border border-transparent
+                        rounded-lg
+                        bg-gray-50
+                      "
+                    />
+                  </div>
 
-                <div class="form-group mt-1 col-span-2">
-                  <Field
-                    name="Rent/Morgage"
-                    type="number"
-                    placeholder="Rent/ Morgage"
-                    class="input input-bordered w-full max-w-xs w-full text-base text-neutral-600 transition duration-500 ease-in-out transform border border-transparent rounded-lg bg-gray-50"
-                  />
-                </div>
-
-                <div class="form-group mt-1 col-span-2">
-                  <Field
-                    name="FOH"
-                    type="number"
-                    placeholder="Front of House"
-                    class="input input-bordered w-full max-w-xs w-full text-base text-neutral-600 transition duration-500 ease-in-out transform border border-transparent rounded-lg bg-gray-50"
-                  />
-                </div>
-
-                <div class="form-group mt-1 col-span-2">
-                  <Field
-                    name="BOH"
-                    type="number"
-                    placeholder="Back of House"
-                    class="input input-bordered w-full max-w-xs w-full text-base text-neutral-600 transition duration-500 ease-in-out transform border border-transparent rounded-lg bg-gray-50"
-                  />
-                </div>
-
-                <div class="form-group mt-1 col-span-2">
-                  <Field
-                    name="taxes"
-                    type="number"
-                    placeholder="Taxes"
-                    class="input input-bordered w-full max-w-xs w-full text-base text-neutral-600 transition duration-500 ease-in-out transform border border-transparent rounded-lg bg-gray-50"
-                  />
-                </div>
-
-                <div class="form-group mt-1 col-span-2">
-                  <Field
-                    name="Misc"
-                    type="number"
-                    placeholder="Misc"
-                    class="input input-bordered w-full max-w-xs w-full text-base text-neutral-600 transition duration-500 ease-in-out transform border border-transparent rounded-lg bg-gray-50"
-                  />
+                  <div class="form-group mt-1 col-span-2">
+                    <Field
+                      name="Misc"
+                      type="number"
+                      placeholder="Misc"
+                      class="
+                        input input-bordered
+                        w-full
+                        max-w-xs
+                        w-full
+                        text-base text-neutral-600
+                        transition
+                        duration-500
+                        ease-in-out
+                        transform
+                        border border-transparent
+                        rounded-lg
+                        bg-gray-50
+                      "
+                    />
+                  </div>
                 </div>
               </div>
 
               <div class="form-group mt-5">
                 <button
-                  class="btn btn-primary btn-block drop-shadow-lg border-solid border-2 rounded-lg"
+                  class="
+                    btn btn-primary btn-block
+                    drop-shadow-lg
+                    border-solid border-2
+                    rounded-lg
+                  "
                   :disabled="loading"
                 >
                   Sign Up
@@ -799,7 +1371,7 @@ export default {
         { value: 'DB', text: 'Dive Bar' },
         { value: 'P', text: 'Pub' },
         { value: 'UB', text: 'Underground Bar' },
-        { value: 'RB', text: 'Restaurant Bar' },
+        { value: 'RB', text: 'restaurant Bar' },
         { value: 'NCB', text: 'NightClub Bar' },
       ],
 
