@@ -46,14 +46,11 @@ User.init(
         companyName: {
             type: DataTypes.STRING,
             allowNull: false,
-<<<<<<< HEAD
             required: true,      
         },
         zipCode:{
             type: DataTypes.NUMBER, 
             allowNull: false, 
-=======
->>>>>>> d2f2614c96874818b130b8fb0084ab458ab33f74
             required: true,
         },
         street: {
@@ -82,13 +79,10 @@ User.init(
             required: true,
         },
         //contact information data tpyes
-<<<<<<< HEAD
         fullName: {
             type: DataTypes.STRING, 
-=======
         name: {
             type: DataTypes.STRING,
->>>>>>> d2f2614c96874818b130b8fb0084ab458ab33f74
             allowNull: false,
             required: true,
         },
