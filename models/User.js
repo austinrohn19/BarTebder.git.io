@@ -64,7 +64,7 @@ User.init(
             required: true,      
         },
         zipCode:{
-            type: DataTypes.STRING, 
+            type: DataTypes.NUMBER, 
             allowNull: false, 
             required: true,
         },
@@ -74,7 +74,7 @@ User.init(
             required: true, 
         },
         //contact information data tpyes
-        name: {
+        fullName: {
             type: DataTypes.STRING, 
             allowNull: false,
             required: true,
@@ -88,7 +88,7 @@ User.init(
             
         },
         number: {
-            type: DataTypes.STRING,
+            type: DataTypes.NUMBER,
             allowNull: false,
             required: false,
         },
@@ -120,6 +120,39 @@ User.init(
         },
         VenderIntergration: {
             type: DataTypes.STRING,
+            allowNull: false,
+        },
+        //Optional Information Data tpyes
+        water: {
+            type: DataTypes.NUMBER,
+            allowNull: false,
+        },
+        electric: {
+            type: DataTypes.NUMBER,
+            allowNull: false,
+        },
+        wages: {
+            type: DataTypes.NUMBER,
+            allowNull: false,
+        },
+        rent: {
+            type: DataTypes.NUMBER, 
+            allowNull: false,
+        },
+        FOH: {
+            type: DataTypes.NUMBER,
+            allowNull: false,
+        },
+        BOH: {
+            type: DataTypes.NUMBER,
+            allowNull: false,   
+        },
+        taxes: {
+            type: DataTypes.NUMBER,
+            allowNull: false,
+        },
+        Misc: {
+            type: DataTypes.NUMBER,
             allowNull: false,
         },
     })
