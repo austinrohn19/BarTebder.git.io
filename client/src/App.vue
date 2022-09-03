@@ -1,29 +1,14 @@
 <template>
   <nav>
-<<<<<<< HEAD
     <router-link to="/">Home </router-link> |
     <router-link v-if="loggedIn || true" to="/dashboard">Dashboard </router-link>
+    
     <router-link v-if="loggedIn || true" to="/bar">My Bar </router-link>
     <router-link v-if="loggedIn || true" to="/cabniet">My Cabniet </router-link>
     <router-link v-if="loggedIn || true" to="/recipes">My Recipes </router-link>
     <router-link v-if="loggedIn || true" to="/scales">My Scales </router-link>
     <router-link v-if="loggedIn || true" to="/servers">My Servers </router-link>
-    <router-link v-if="loggedIn || true" to="/summary">Summary </router-link>
-=======
-    <router-link to="/">Home</router-link> |
-    <router-link v-if="loggedIn || true" to="/dashboard">Dashboard</router-link
-    ><br />
-    <router-link v-if="loggedIn || true" to="/bar">bar</router-link><br />
-    <router-link v-if="loggedIn || true" to="/cabniet">cabniet</router-link
-    ><br />
-    <router-link v-if="loggedIn || true" to="/recipes">recipes</router-link
-    ><br />
-    <router-link v-if="loggedIn || true" to="/scales">scales</router-link><br />
-    <router-link v-if="loggedIn || true" to="/servers">servers</router-link
-    ><br />
-    <router-link v-if="loggedIn || true" to="/summary">summary</router-link
-    ><br />
->>>>>>> 0e1180df4ffc720fbc5a70770eeb15c377940d80
+    <router-link v-if="loggedIn || true" to="/summary">Summary </router-link> 
   </nav>
   <router-view />
 </template>
