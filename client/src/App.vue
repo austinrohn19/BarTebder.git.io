@@ -1,13 +1,18 @@
 <template>
   <nav>
     <router-link to="/">Home</router-link> |
-    <router-link v-if="loggedIn || true" to="/dashboard">Dashboard</router-link>
-    <router-link v-if="loggedIn || true" to="/bar">bar</router-link>
-    <router-link v-if="loggedIn || true" to="/cabniet">cabniet</router-link>
-    <router-link v-if="loggedIn || true" to="/recipes">recipes</router-link>
-    <router-link v-if="loggedIn || true" to="/scales">scales</router-link>
-    <router-link v-if="loggedIn || true" to="/servers">servers</router-link>
-    <router-link v-if="loggedIn || true" to="/summary">summary</router-link>
+    <router-link v-if="loggedIn || true" to="/dashboard">Dashboard</router-link
+    ><br />
+    <router-link v-if="loggedIn || true" to="/bar">bar</router-link><br />
+    <router-link v-if="loggedIn || true" to="/cabniet">cabniet</router-link
+    ><br />
+    <router-link v-if="loggedIn || true" to="/recipes">recipes</router-link
+    ><br />
+    <router-link v-if="loggedIn || true" to="/scales">scales</router-link><br />
+    <router-link v-if="loggedIn || true" to="/servers">servers</router-link
+    ><br />
+    <router-link v-if="loggedIn || true" to="/summary">summary</router-link
+    ><br />
   </nav>
   <router-view />
 </template>
