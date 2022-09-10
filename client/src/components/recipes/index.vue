@@ -1,6 +1,52 @@
 <template>
   <div>
-    <button class="btn">Add Drink</button>
+    <!-- The button to open modal -->
+    <label for="my-modal" class="btn modal-button">Add Drink</label>
+
+    <!-- Put this part before </body> tag -->
+    <input type="checkbox" id="my-modal" class="modal-toggle" />
+    <div class="modal">
+      <div class="modal-box">
+        <div class="p-4">
+          <label>Drink name: </label>
+          <input type="text" v-model="newDrink.name" placeholder="name" />
+        </div>
+        <div>
+          <label>Drink instructions: </label>
+          <textarea
+            class="textarea"
+            placeholder="instructions"
+            v-model="newDrink.instructions"
+          ></textarea>
+        </div>
+        <div>
+          <span
+            v-for="(ingredents, index) in newDrink.ingredents"
+            :key="ingredents"
+          >
+            <input
+              type="text"
+              v-model="ingredents.name"
+              placeholder="ingredents name"
+            />
+            <input
+              type="text"
+              v-model="ingredents.amount"
+              placeholder="ingredents amount"
+            />
+            <button class="btn" @click="mRemoveFromIngredients(index)">
+              X
+            </button>
+          </span>
+          <button class="btn" @click="mAddMoreIngredients">
+            Add more ingredients
+          </button>
+        </div>
+        <div class="modal-action">
+          <label for="my-modal" class="btn" @click="mAddDrink">Yay!</label>
+        </div>
+      </div>
+    </div>
     <section>
       <div
         class="
@@ -41,6 +87,7 @@ export default {
       successful: false,
       loading: false,
       message: '',
+      newDrink: { ingredents: [{ name: '', amount: '' }] },
       drinks: [
         {
           name: 'moscow mule',
@@ -119,6 +166,20 @@ export default {
   },
   computed: {},
   mounted() {},
-  methods: {},
+  methods: {
+    mRemoveFromIngredients(index) {
+      this.newDrink.ingredents = this.newDrink.ingredents.filter((v, i) => {
+        return i !== index;
+      });
+    },
+    mAddMoreIngredients() {
+      console.log(this.newDrink.ingredents);
+      this.newDrink.ingredents.push({ name: '', amount: '' });
+    },
+    mAddDrink() {
+      this.newDrink.push(this.newDrink);
+      this.newDrink = { ingredents: [{ name: '', amount: '' }] };
+    },
+  },
 };
 </script>
