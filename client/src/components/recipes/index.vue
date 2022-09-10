@@ -15,7 +15,7 @@
           max-w-7xl
         "
       >
-        <div class="grid w-full grid-cols-1 gap-6 mx-auto lg:grid-cols-3">
+        <div class="grid w-full grid-cols-1 gap-1 mx-auto lg:grid-cols-4">
           <div class="p-6" v-for="drink in drinks" :key="drink">
             <drink-card :data="drink"></drink-card>
           </div>
