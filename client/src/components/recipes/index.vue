@@ -1,9 +1,8 @@
 <template>
   <div>
-    <!-- The button to open modal -->
-    <label for="my-modal" class="btn modal-button">Add Drink</label>
+    <button class="btn" @click="goToAddDrink">Add Drink</button>
+    <!-- <label for="my-modal" class="btn modal-button">Add Drink</label>
 
-    <!-- Put this part before </body> tag -->
     <input type="checkbox" id="my-modal" class="modal-toggle" />
     <div class="modal">
       <div class="modal-box">
@@ -44,9 +43,12 @@
         </div>
         <div class="modal-action">
           <label for="my-modal" class="btn" @click="mAddDrink">Yay!</label>
+          <label for="my-modal" class="btn btn-warning" @click="mClose"
+            >Close</label
+          >
         </div>
       </div>
-    </div>
+    </div> -->
     <section>
       <div
         class="
@@ -72,6 +74,7 @@
 </template>
 
 <script>
+import router from '../../router';
 import drinkCard from './drink.vue';
 import { Form, Field, ErrorMessage } from 'vee-validate';
 export default {
@@ -178,7 +181,18 @@ export default {
     },
     mAddDrink() {
       this.newDrink.push(this.newDrink);
+      this.mClose();
+    },
+    mClose() {
       this.newDrink = { ingredents: [{ name: '', amount: '' }] };
+    },
+    goToAddDrink() {
+      router.push({
+        name: 'drinkCrud',
+        params: {
+          drinkToEdit: this.newDrink,
+        },
+      });
     },
   },
 };

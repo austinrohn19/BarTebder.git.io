@@ -14,6 +14,7 @@ declare module '@vue/runtime-core' {
     Counter: typeof import('./components/bar/counter.vue')['default']
     Dashboard: typeof import('./components/dashboard.vue')['default']
     Drink: typeof import('./components/recipes/drink.vue')['default']
+    DrinkCrud: typeof import('./components/recipes/drinkCrud.vue')['default']
     Fridges: typeof import('./components/bar/fridges.vue')['default']
     HelloWorld: typeof import('./components/HelloWorld.vue')['default']
     Login: typeof import('./components/login/login.vue')['default']

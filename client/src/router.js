@@ -26,6 +26,12 @@ const routes = [
         component: () => import('@/components/recipes/index.vue'),
     },
     {
+        path: '/recipes/drink',
+        name: 'drinkCrud',
+        component: () => import('@/components/recipes/drinkCrud.vue'),
+        props: true
+    },
+    {
         path: '/scales',
         component: () => import('@/components/scales/index.vue'),
     },
@@ -60,14 +66,6 @@ const routes = [
     {
         path: '/cabniet/alcohol-inventory',
         component: () => import('@/components/cabniet/alcoholInventory.vue'),
-    },
-    {
-        path: '/recipes/addDrink',
-        component: () => import('@/components/recipes/drink.vue'),
-    },
-    {
-        path: '/recipes/editDrink',
-        component: () => import('@/components/recipes/drink.vue'),
     },
     {
         path: '/recipes/serverTracker',
