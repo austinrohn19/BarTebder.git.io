@@ -1,5 +1,6 @@
 <template>
-  <nav>
+  <router-view>
+    <nav>
     <router-link to="/">Home </router-link> |
     <router-link v-if="loggedIn || true" to="/dashboard">Dashboard</router-link>
     <router-link v-if="loggedIn || true" to="/bar">My Bar </router-link>
@@ -8,8 +9,8 @@
     <router-link v-if="loggedIn || true" to="/scales">My Scales </router-link>
     <router-link v-if="loggedIn || true" to="/servers">My Servers </router-link>
     <router-link v-if="loggedIn || true" to="/summary">Summary </router-link>
-  </nav>
-  <router-view />
+  </nav> 
+  </router-view>
 </template>
 
 <script>
