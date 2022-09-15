@@ -159,11 +159,11 @@ User.init(
             type: DataTypes.NUMBER,
             allowNull: false,
         },
-        Misc: {
+        misc: {
             type: DataTypes.NUMBER,
             allowNull: false,
         },
-    })
+    },
 hooks: {
             // set up beforeCreate lifecycle "hook" functionality
             async beforeCreate(newUserData) {

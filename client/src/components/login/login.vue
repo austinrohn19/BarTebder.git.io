@@ -12,26 +12,7 @@
           <Form class="space-y-6" @submit="handleLogin">
             <div>
               <div class="mt-1">
-                <Field
-                  name="email"
-                  type="email"
-                  autocomplete="email"
-                  placeholder="email"
-                  class="
-                    input input-bordered
-                    w-full
-                    max-w-xs
-                    w-full
-                    text-base text-neutral-600
-                    transition
-                    duration-500
-                    ease-in-out
-                    transform
-                    border border-transparent
-                    rounded-lg
-                    bg-gray-50
-                  "
-                />
+                
                 <Field
                   placeholder="Email Address"
                   id="email"
